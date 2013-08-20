@@ -86,25 +86,44 @@
 		<!--HOME SECTION-->
 		<section id="home" class="home-template inverse-color">
 			<div class="section-holder">
-				<div class="slider">
+				<div id="parallax" class="parallax-viewport">
+			        <!-- parallax layers -->
+			        <div class="parallax-layer" style="width:960px; height:470px;">
+			            <img src="resources/images/slides/layer1.png" alt=""/>
+			        </div>
+			        <div class="parallax-layer" style="width:860px; height:470px;">
+			            <img src="resources/images/slides/layer2.png" alt="" />
+			        </div>
+			        <div class="parallax-layer" style="width:760px; height:470px;">
+			            <img src="resources/images/slides/layer3.png" alt=""/>
+			        </div>
+			        <div class="parallax-layer" style="width:660px; height:470px;">
+			            <img src="resources/images/slides/layer4.png" alt=""/>
+			        </div>
+			        <div class="parallax-layer" style="width:560px; height:470px;">
+			            <img src="resources/images/slides/layer5.png" alt=""/>
+			        </div>
+    			</div>
+
+				<!-- <div class="slider">
 					<ul class="slides">
 						<li>
 							<img src="resources/images/slides/vitosha.jpg" alt="Slide 01">
-							<!-- <h1 class="caption" data-offset-top="130" data-offset-left="120" data-direction="left">Welcome to ilone</h1>
-							<h4 class="caption" data-offset-top="248" data-offset-left="204">We are a small group of creatives who love what they do. </h4> -->
+							<h1 class="caption" data-offset-top="130" data-offset-left="120" data-direction="left">Welcome to ilone</h1>
+							<h4 class="caption" data-offset-top="248" data-offset-left="204">We are a small group of creatives who love what they do. </h4>
 						</li>
-						<!-- <li>
+						<li>
 							<img src="resources/images/slides/01.jpg" alt="Slide 02">
 							<h1 class="caption" data-offset-top="130" data-offset-left="510" data-direction="left" >Snowflake 2013</h1>
 							<h4 class="caption" data-offset-top="248" data-offset-left="464">Feel free to check this wonderful <a href="#/works/project/snowflake-2013">project</a> of ours.</h4>
-						</li> -->
-						<!-- <li>
+						</li>
+						<li>
 							<img src="resources/images/slides/01.jpg" alt="Slide 03">
 							<h1 class="caption" data-offset-top="130" data-offset-left="210" data-direction="right" >Check our works</h1>
 							<h4 class="caption" data-offset-top="248" data-offset-left="248" data-direction="left">We gathered some of our favorite projects in our portfolio, don't miss them.</h4>
-						</li> -->
+						</li>
 					</ul>
-				</div>
+				</div> -->
 				<!-- <div class="page-controls">
 					<a class="previous" href="#"></a>
 					<a class="next" href="#"></a>
@@ -586,5 +605,16 @@
 			</div>
 		</footer>
 		<!--END FOOTER-->
+
+		<script type="text/javascript" src="resources/js/jquery.parallax.js"></script>
+		<script type="text/javascript" src="resources/js/jquery.event.frame.js"></script>
+		<script>
+		  jQuery(document).ready(function(){
+		    $('#parallax .parallax-layer')
+		    .parallax({
+		      mouseport: jQuery('#parallax')
+		    });
+		  });
+  		</script>
 	</body>
 </html>

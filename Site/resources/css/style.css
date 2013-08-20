@@ -2395,3 +2395,12 @@ p.drop-cap.round:first-letter {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
+
+.parallax-viewport { 
+	position:relative; 
+	overflow:hidden; 
+	margin: 0 auto;
+	width: 960px;
+	height: 470px;
+}
+.parallax-layer { position:absolute; }
