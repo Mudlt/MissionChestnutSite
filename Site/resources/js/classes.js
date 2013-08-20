@@ -3,7 +3,7 @@
 /* Works Page Template Class */
 (function($)
 {
-	$.fn.Works = function(options, deeplink, __callbacks)
+	$.fn.Mission = function(options, deeplink, __callbacks)
 	{
 		var use_external_filter = true;
 		var filterable_gallery = false;
@@ -1890,6 +1890,151 @@
 		var o = options;
 		var name = this.attr('id');
 
+		/* contact form variables */
+		var form = '.contact-form';
+		var fields = 'input:not(input[type="submit"]), textarea, select';
+
+		var callbacks = __callbacks ? __callbacks : {};
+		var default_callbacks = {
+			onsetup: function(){},
+			on404: function(){},
+			onready: function(_this_){}
+		};
+		
+		this.ready = false;
+		$.extend(true, _this_, default_callbacks, callbacks);
+
+		/* Contact form functionality */
+		function _form()
+		{
+			_this_.find(form).submit(function(e)
+			{
+				e.preventDefault();
+				var form = $(this);
+				var url = form.attr('action');
+				var data = form.find(fields).serialize();
+
+				
+
+				form.find('[type="submit"]').attr('disabled', 'disabled');
+
+				$.ajax({
+					type: "POST",
+					url: url,
+					data: data,
+					error: function(jqXHR, textStatus, errorThrown)
+					{
+
+					},
+					success: function(data, textStatus, jqXHR)
+					{
+						//console.log(data);
+
+						var tooltip = $('<div>');
+						var _data = $.parseJSON( data );
+						if(_data.error && _data.error != 'global')
+						{
+							form.find(fields).css({
+								'border-color': ''
+							});
+
+							$('.field-error').fadeOut('fast', function()
+							{
+								$(this).remove();
+							});
+
+							var error_field = form.find('[name="'+ _data.error +'"]');
+							error_field.css({
+								'border-color': '#ff5050'
+							});
+							
+							tooltip.attr('class', 'field-error message-box error');
+							tooltip.html(_data.message);
+							tooltip.hide().appendTo(form).fadeIn('fast');
+							tooltip.css({
+								top: form.find('[type="submit"]').position().top,
+								left: form.find('[type="submit"]').position().left + form.find('[type="submit"]').outerWidth(true) + 10
+							});
+							form.find('[type="submit"]').removeAttr('disabled');
+							
+						}
+						else if(_data.error && _data.error == 'global')
+						{
+							form.find(fields).css({
+								'border-color': ''
+							});
+
+							$('.field-error').fadeOut('fast', function()
+							{
+								$(this).remove();
+							});
+							
+							tooltip.attr('class', 'field-error message-box error');
+							tooltip.html(_data.message);
+							tooltip.hide().appendTo(form).fadeIn('fast');
+							tooltip.css({
+								top: form.find('[type="submit"]').position().top,
+								left: form.find('[type="submit"]').position().left + form.find('[type="submit"]').outerWidth(true) + 10
+							});
+
+							tooltip.delay(10000).fadeOut('slow', function()
+							{
+								$(this).remove();
+								form.find('[type="submit"]').removeAttr('disabled');
+							});
+						}
+						else
+						{
+							$('.field-error').fadeOut('fast', function()
+							{
+								$(this).remove();
+							});
+
+							form.find(fields).css({
+								'border-color': ''
+							});
+							tooltip.attr('class', 'form-success message-box success');
+							tooltip.html(_data.message);
+							tooltip.hide().appendTo(form).fadeIn('fast');
+							tooltip.css({
+								top: form.find('[type="submit"]').position().top,
+								left: form.find('[type="submit"]').position().left + form.find('[type="submit"]').outerWidth(true) + 10
+							});
+
+							form.find(fields).val('');
+
+							tooltip.delay(4000).fadeOut('slow', function()
+							{
+								$(this).remove();
+								form.find('[type="submit"]').removeAttr('disabled');
+							});
+						}
+						//console.log(data);
+					}
+				})
+
+			});
+			
+		}
+
+		_form();
+		this.on404 = function(__message){};
+
+		this.ready = true;
+		return this;
+	}
+})(jQuery);
+
+/*================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================*/
+/* Results Page Template Class */
+(function($)
+{
+	$.fn.Results = function(options, deeplink, __callbacks)
+	{
+		var _this_ = this;
+		var o = options;
+		var name = this.attr('id');
+
 		var map = '.google-map';
 
 		var map_opener = 'a.to-map';
@@ -1899,13 +2044,7 @@
 		var is_map_open = false;
 		var is_map_loaded = false;
 
-		/* contact form variables */
-		var form = '.contact-form';
-		var fields = 'input:not(input[type="submit"]), textarea, select';
-
 		var close_map = $('<a href="#">').addClass('close-map');
-
-		//this.map_opener_top_pos = this.find(map_opener).parent().position().top;
 		
 		var callbacks = __callbacks ? __callbacks : {};
 		var default_callbacks = {
@@ -2068,120 +2207,6 @@
 			_this_.closeMap();
 		});
 
-		/* Contact form functionality */
-		function _form()
-		{
-			_this_.find(form).submit(function(e)
-			{
-				e.preventDefault();
-				var form = $(this);
-				var url = form.attr('action');
-				var data = form.find(fields).serialize();
-
-				
-
-				form.find('[type="submit"]').attr('disabled', 'disabled');
-
-				$.ajax({
-					type: "POST",
-					url: url,
-					data: data,
-					error: function(jqXHR, textStatus, errorThrown)
-					{
-
-					},
-					success: function(data, textStatus, jqXHR)
-					{
-						//console.log(data);
-
-						var tooltip = $('<div>');
-						var _data = $.parseJSON( data );
-						if(_data.error && _data.error != 'global')
-						{
-							form.find(fields).css({
-								'border-color': ''
-							});
-
-							$('.field-error').fadeOut('fast', function()
-							{
-								$(this).remove();
-							});
-
-							var error_field = form.find('[name="'+ _data.error +'"]');
-							error_field.css({
-								'border-color': '#ff5050'
-							});
-							
-							tooltip.attr('class', 'field-error message-box error');
-							tooltip.html(_data.message);
-							tooltip.hide().appendTo(form).fadeIn('fast');
-							tooltip.css({
-								top: form.find('[type="submit"]').position().top,
-								left: form.find('[type="submit"]').position().left + form.find('[type="submit"]').outerWidth(true) + 10
-							});
-							form.find('[type="submit"]').removeAttr('disabled');
-							
-						}
-						else if(_data.error && _data.error == 'global')
-						{
-							form.find(fields).css({
-								'border-color': ''
-							});
-
-							$('.field-error').fadeOut('fast', function()
-							{
-								$(this).remove();
-							});
-							
-							tooltip.attr('class', 'field-error message-box error');
-							tooltip.html(_data.message);
-							tooltip.hide().appendTo(form).fadeIn('fast');
-							tooltip.css({
-								top: form.find('[type="submit"]').position().top,
-								left: form.find('[type="submit"]').position().left + form.find('[type="submit"]').outerWidth(true) + 10
-							});
-
-							tooltip.delay(10000).fadeOut('slow', function()
-							{
-								$(this).remove();
-								form.find('[type="submit"]').removeAttr('disabled');
-							});
-						}
-						else
-						{
-							$('.field-error').fadeOut('fast', function()
-							{
-								$(this).remove();
-							});
-
-							form.find(fields).css({
-								'border-color': ''
-							});
-							tooltip.attr('class', 'form-success message-box success');
-							tooltip.html(_data.message);
-							tooltip.hide().appendTo(form).fadeIn('fast');
-							tooltip.css({
-								top: form.find('[type="submit"]').position().top,
-								left: form.find('[type="submit"]').position().left + form.find('[type="submit"]').outerWidth(true) + 10
-							});
-
-							form.find(fields).val('');
-
-							tooltip.delay(4000).fadeOut('slow', function()
-							{
-								$(this).remove();
-								form.find('[type="submit"]').removeAttr('disabled');
-							});
-						}
-						//console.log(data);
-					}
-				})
-
-			});
-			
-		}
-
-		_form();
 		this.on404 = function(__message){};
 
 		this.ready = true;
