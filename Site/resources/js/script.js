@@ -10,7 +10,7 @@ var o = {
 		}
 	},
 	blog: {
-		posts_per_page: 2, //post to be loaded/shown per page
+		posts_per_page: 3, //post to be loaded/shown per page
 		masonry: {
 			enabled: false, //enable (true) or disable(false) the masonry effect for blog
 			columns: 2, //masonry columns number
@@ -114,7 +114,7 @@ $(window).load(function()
 			});
 		}
 		//BLOG
-		else if( $(this).hasClass('blog-template') && $(this).Blog )
+		else if( $(this).hasClass('blogs-template') && $(this).Blog )
 		{
 			section[$(this).attr('id')] = $(this).Blog(o, deeplink);
 		}

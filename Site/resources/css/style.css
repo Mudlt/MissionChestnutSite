@@ -562,7 +562,7 @@ section.home-template .page-controls {
 	text-align: center;
 }
 	
-section.blog-template .page-controls {
+section.blogs-template .page-controls {
 	position: static;
 	width: 100%;
 	float: left;
@@ -572,7 +572,7 @@ section.blog-template .page-controls {
 	margin-left: 0;
 }
 
-section.blog-template .page-controls a {
+section.blogs-template .page-controls a {
 	display: inline-block;
 	position: static;
 	font-size: 16px;
@@ -582,17 +582,17 @@ section.blog-template .page-controls a {
 	color: #f2c4b6;
 }
 
-section.blog-template .page-controls a.active {
+section.blogs-template .page-controls a.active {
 	background-color: #da4417;
 	color: #fff;
 }
 
-section.blog-template .page-controls a:before {
+section.blogs-template .page-controls a:before {
 	font-size: 8px;
 	line-height: 24px;
 }
 
-section.blog-template .page-controls a:hover {
+section.blogs-template .page-controls a:hover {
 	background-color: #da4417;
 	color: #fff;
 }
@@ -1007,12 +1007,12 @@ section.contacts-template textarea:-ms-input-placeholder {
 	position: relative;
 	display: block;
 	float: left;
-	width: 48.75%;
+	width: 31.6%;
 	margin-right: 2.5%;
 	margin-bottom: 48px;
 }
 
-.blog-posts>li:nth-child(2n+0) {
+.blog-posts>li:last-child {
 	margin-right: 0;
 }
 

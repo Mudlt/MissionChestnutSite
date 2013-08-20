@@ -8,7 +8,6 @@
 <link rel="stylesheet" href="resources/css/style.css" type="text/css" />
 <link rel="stylesheet" href="resources/css/media-queries.css" type="text/css" media="all" />
 
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 <script type="text/javascript" src="resources/js/jquery.easing.1.3.js"></script>
 <script type="text/javascript" src="resources/js/media.box.jquery.js"></script>
@@ -55,14 +54,13 @@
 						<img src="resources/images/logo.jpg" alt="ilone - Portfolio Template">
 					</a>
 				</div>
-				<!--end logo-container-->
 				<nav class="main-navigation">
 					<ul class="nav">
 						<li class="current">
 							<a href="#home">Начало</a>
 						</li>
 						<li>
-							<a href="#news">Новини</a>
+							<a href="#blogs">Новини</a>
 						</li>
 						<li>
 							<a href="#mission">Мисия</a>
@@ -80,23 +78,20 @@
 							<a href="#contacts">Контакти</a>
 						</li>
 					</ul>
-					<!--end nav-->
 				</nav>
-				<!--end main-navigation-->
 			</div>
-			<!--end header-container-->
 		</header>
 		<!--END HEADER-->
 
-		<!--HOME-->
+		<!--HOME SECTION-->
 		<section id="home" class="home-template inverse-color">
 			<div class="section-holder">
 				<div class="slider">
 					<ul class="slides">
 						<li>
 							<img src="resources/images/slides/vitosha.jpg" alt="Slide 01">
-							<h1 class="caption" data-offset-top="130" data-offset-left="120" data-direction="left">Welcome to ilone</h1>
-							<h4 class="caption" data-offset-top="248" data-offset-left="204">We are a small group of creatives who love what they do. </h4>
+							<!-- <h1 class="caption" data-offset-top="130" data-offset-left="120" data-direction="left">Welcome to ilone</h1>
+							<h4 class="caption" data-offset-top="248" data-offset-left="204">We are a small group of creatives who love what they do. </h4> -->
 						</li>
 						<!-- <li>
 							<img src="resources/images/slides/01.jpg" alt="Slide 02">
@@ -116,67 +111,42 @@
 				</div> -->
 			</div>
 		</section>
-		<!--END HOME-->
+		<!--END HOME SECTION-->
 
-		<!--NEWS-->
-		<section id="news" class="blog-template" data-source="news.html">
+		<!--BLOGS SECTION-->
+		<section id="blogs" class="blogs-template" data-source="blogs/short-blogs.html">
 			<div class="section-holder">
 				<div class="heading">
-					<!--<span class="page-number">1/3 </span>-->
 					<h1>Новини</h1>
-					<!-- <nav>
-						<span class="section-nav-label">Latest Posts</span>
-						<ul class="section-nav blog-categories">
-							<li>
-								<a href="#all">Latest Posts</a>
-							</li>
-							<li>
-								<a href="#html">HTML</a>
-							</li>
-							<li>
-								<a href="#css">CSS</a>
-							</li>
-							<li>
-								<a href="#web-design">Web Design</a>
-							</li>
-							<li class="separate">
-								<a href="#march">March</a>
-							</li>
-							<li>
-								<a href="#february">February</a>
-							</li>
-							<li>
-								<a href="#january">January</a>
-							</li>
-						</ul>
-					</nav> -->
 				</div>
-				<!--end heading-->
 
 				<div class="content">
 					<ul class="blog-posts">
-						<li data-tag="html, web-design" data-slug="amazing-html5-history-object">
-							<a class="post-thumb read-more" href="blog-post.html">
-								<!-- <img src="resources/images/news/thumbs/01.jpg" alt=""> -->
+						<li data-tag="cat1" data-slug="blog1">
+							<a class="post-thumb read-more" href="blogs/blog1.html">
+								<img src="resources/images/news/thumbs/01.jpg" alt="">
 								<span class="hover-element"></span>
 							</a>
 							<div class="post-details">
-								<h5>Мисия Кестен търси своите училища</h5>
-								<p><em>В своята мисия, проектният екип има нужда от помощта на шест столични основни училища, чиито 
-									ученици от 5ти-6ти клас да „преброят” кестените. Те ще се запознаят с проблема, ще научат за 
-									начините за справяне с него и за това, как трябва да се грижат за едно дърво.</em></p>
-								<a class="read-more" href="blog-post.html">Read More</a>
+								<h5>Започнахме!</h5>
+								<p><em>На 19.07, официално беше дадено начало на Мисия Кестен. Фондация Цвете подписа договор 
+									за финансиране и изпълнение на проекта с Програмата за подкрепа на НПО в България по 
+									Финансовия механизъм на Европейското икономическо пространство.</em></p>
+								<a class="read-more" href="blogs/blog1.html">Научи повече</a>
 							</div>
 						</li>
 					</ul>
 				</div>
-				
-			</div>
-			<!--end section-holder-->
-		</section>
-		<!--END NEWS-->
 
-		<!--MISSION-->
+				<div class="page-controls">
+					<a class="previous" href="#"></a>
+					<a class="next" href="#"></a>
+				</div>
+			</div>
+		</section>
+		<!--END BLOGS SECTION-->
+
+		<!--MISSION SECTION-->
 		<section id="mission" class="works-template" data-source="works.html">
 			<div class="section-holder">
 				<div class="heading">
@@ -199,7 +169,6 @@
 						</ul>
 					</nav> -->
 				</div>
-				<!--end heading-->
 				<div class="content">
 					<ul class="works-gallery">
 						<li data-tag="graphic-design, other" data-slug="quickresponse">
@@ -261,16 +230,14 @@
 						</li>
 					</ul>
 				</div>
-				<!--end content-->
-				<a class="load-more" href="#more">+</a>
+				<!-- <a class="load-more" href="#more">+</a> -->
 			</div>
-			<!--end section-holder-->
 		</section>
-		<!--END MISSION-->
+		<!--END MISSION SECTION-->
 
-		<!--CHRONOLOGY-->
+		<!--CHRONOLOGY SECTION-->
 		<section id="chronology" class="standart-template">
-			<div class="section-holder box-loader">
+			<div class="section-holder">
 				<div class="heading">
 					<h1>Хронология</h1>
 					<!-- <nav>
@@ -291,20 +258,24 @@
 						</ul>
 					</nav> -->
 				</div>
-				<!--end heading-->
-				<div class="content box-loader-data">
+				<div class="content">
 					
 				</div>
 			</div>
-			<!--end section-holder-->
 		</section>
-		<!--END CHRONOLOGY-->
+		<!--END CHRONOLOGY SECTION-->
 
-		<!--RESULTS-->
+		<!--RESULTS SECTION-->
 		<section id="results" class="results-template">
 			<div class="section-holder">
 				<div class="heading">
 					<h1>Резултати</h1>
+					<nav>
+						<a href="#" class="section-nav-label to-map">Map</a>
+						<div class="section-info">
+							
+						</div>
+					</nav>
 				</div>
 
 				<div class="content">
@@ -315,13 +286,12 @@
 							ж.к. „Яворов”. Събраните данни вече са налични за преглед и сваляне в нашата база данни:</p>
 					</div>
 				</div>
-
-				<div class="google-map" data-latitude="-37.81677" data-longitude="144.964956" data-type="ROADMAP" data-zoom="16" data-pointer-title="Hey, We're Here!"></div>
 			</div>
+			<div class="google-map" data-latitude="-37.81677" data-longitude="144.964956" data-type="ROADMAP" data-zoom="16" data-pointer-title="Hey, We're Here!"></div>
 		</section>
-		<!--END RESULTS-->
+		<!--END RESULTS SECTION-->
 
-		<!--ABOUT-->
+		<!--ABOUT SECTION-->
 		<section id="about" class="about-template">
 			<div class="section-holder">
 				<div class="heading">
@@ -348,7 +318,6 @@
 								<img src="resources/images/social/facebook.png" alt="facebook"/>
 							</a>
 						</div>
-						
 					</li>
 
 					<li>
@@ -370,7 +339,6 @@
 								<img src="resources/images/social/twitter.png" alt="twitter"/>
 							</a>
 						</div>
-						
 					</li>
 
 					<li>
@@ -395,7 +363,138 @@
 								<img src="resources/images/social/facebook.png" alt="facebook"/>
 							</a>
 						</div>
-						
+					</li>
+
+					<li>
+						<a class="avatar mediabox" href="resources/images/about/01.jpg">
+							<img src="resources/images/about/01.jpg" alt="">
+						</a>
+						<div class="member-details">
+							<h5>Jonathan Doe</h5>
+							<p><em>Web Designer / Code Magician</em></p>
+						</div>
+						<div class="social-icons-container">
+							<a class="social-icon" href="http://dribbble.com">
+								<img src="resources/images/social/dribbble.png" alt="dribbble"/>
+							</a>
+							<a class="social-icon" href="http://twitter.com">
+								<img src="resources/images/social/twitter.png" alt="twitter"/>
+							</a>
+							<a class="social-icon" href="http://facebook.com">
+								<img src="resources/images/social/facebook.png" alt="facebook"/>
+							</a>
+						</div>
+					</li>
+
+					<li>
+						<a class="avatar mediabox" href="resources/images/about/01.jpg">
+							<img src="resources/images/about/01.jpg" alt="">
+						</a>
+						<div class="member-details">
+							<h5>Joanna Doe</h5>
+							<p><em>Graphic Designer</em></p>
+						</div>
+						<div class="social-icons-container">
+							<a class="social-icon" href="http://deviantart.com">
+								<img src="resources/images/social/deviant.png" alt="deviantart"/>
+							</a>
+							<a class="social-icon" href="http://dribbble.com">
+								<img src="resources/images/social/dribbble.png" alt="dribbble"/>
+							</a>
+							<a class="social-icon" href="http://twitter.com">
+								<img src="resources/images/social/twitter.png" alt="twitter"/>
+							</a>
+						</div>
+					</li>
+
+					<li>
+						<a class="avatar mediabox" href="resources/images/about/01.jpg">
+							<img src="resources/images/about/01.jpg" alt="">
+						</a>
+						<div class="member-details">
+							<h5>William Smith</h5>
+							<p><em>Art Director / Blogger</em></p>
+						</div>
+						<div class="social-icons-container">
+							<a class="social-icon" href="http://dribbble.com">
+								<img src="resources/images/social/dribbble.png" alt="dribbble"/>
+							</a>
+							<a class="social-icon" href="http://twitter.com">
+								<img src="resources/images/social/twitter.png" alt="twitter"/>
+							</a>
+							<a class="social-icon" href="http://behance.com">
+								<img src="resources/images/social/behance.png" alt="behance"/>
+							</a>
+							<a class="social-icon" href="http://facebook.com">
+								<img src="resources/images/social/facebook.png" alt="facebook"/>
+							</a>
+						</div>
+					</li>
+
+					<li>
+						<a class="avatar mediabox" href="resources/images/about/01.jpg">
+							<img src="resources/images/about/01.jpg" alt="">
+						</a>
+						<div class="member-details">
+							<h5>Jonathan Doe</h5>
+							<p><em>Web Designer / Code Magician</em></p>
+						</div>
+						<div class="social-icons-container">
+							<a class="social-icon" href="http://dribbble.com">
+								<img src="resources/images/social/dribbble.png" alt="dribbble"/>
+							</a>
+							<a class="social-icon" href="http://twitter.com">
+								<img src="resources/images/social/twitter.png" alt="twitter"/>
+							</a>
+							<a class="social-icon" href="http://facebook.com">
+								<img src="resources/images/social/facebook.png" alt="facebook"/>
+							</a>
+						</div>
+					</li>
+
+					<li>
+						<a class="avatar mediabox" href="resources/images/about/01.jpg">
+							<img src="resources/images/about/01.jpg" alt="">
+						</a>
+						<div class="member-details">
+							<h5>Joanna Doe</h5>
+							<p><em>Graphic Designer</em></p>
+						</div>
+						<div class="social-icons-container">
+							<a class="social-icon" href="http://deviantart.com">
+								<img src="resources/images/social/deviant.png" alt="deviantart"/>
+							</a>
+							<a class="social-icon" href="http://dribbble.com">
+								<img src="resources/images/social/dribbble.png" alt="dribbble"/>
+							</a>
+							<a class="social-icon" href="http://twitter.com">
+								<img src="resources/images/social/twitter.png" alt="twitter"/>
+							</a>
+						</div>
+					</li>
+
+					<li>
+						<a class="avatar mediabox" href="resources/images/about/01.jpg">
+							<img src="resources/images/about/01.jpg" alt="">
+						</a>
+						<div class="member-details">
+							<h5>William Smith</h5>
+							<p><em>Art Director / Blogger</em></p>
+						</div>
+						<div class="social-icons-container">
+							<a class="social-icon" href="http://dribbble.com">
+								<img src="resources/images/social/dribbble.png" alt="dribbble"/>
+							</a>
+							<a class="social-icon" href="http://twitter.com">
+								<img src="resources/images/social/twitter.png" alt="twitter"/>
+							</a>
+							<a class="social-icon" href="http://behance.com">
+								<img src="resources/images/social/behance.png" alt="behance"/>
+							</a>
+							<a class="social-icon" href="http://facebook.com">
+								<img src="resources/images/social/facebook.png" alt="facebook"/>
+							</a>
+						</div>
 					</li>
 				</ul>
 
@@ -416,9 +515,9 @@
 				</div>
 			</div>
 		</section>
-		<!--END ABOUT-->
+		<!--END ABOUT SECTION-->
 
-		<!--CONTACTS-->
+		<!--CONTACTS SECTION-->
 		<section id="contacts" class="contacts-template">
 			<div class="section-holder">
 				<div class="heading">
@@ -476,33 +575,11 @@
 
 			<!-- <div class="google-map" data-latitude="-37.81677" data-longitude="144.964956" data-type="ROADMAP" data-zoom="16" data-pointer-title="Hey, We're Here!"></div> -->
 		</section>
-		<!--END CONTACTS-->
+		<!--END CONTACTS SECTION-->
 
 		<!--FOOTER-->
 		<footer id="footer">
 			<div class="footer-container">
-				<!-- <nav class="footer-navigation">
-					<ul class="nav">
-						<li class="current">
-							<a href="#home">Начало</a>
-						</li>
-						<li>
-							<a href="#news">Новини</a>
-						</li>
-						<li>
-							<a href="#mission">Мисия</a>
-						</li>
-						<li>
-							<a href="#chronology">Хронология</a>
-						</li>
-						<li>
-							<a href="#about">За нас</a>
-						</li>
-						<li>
-							<a href="#contacts">Контакти</a>
-						</li>
-					</ul>
-				</nav> -->
 				<span class="footer-info">
 					Мисия Кестен 2013
 				</span>

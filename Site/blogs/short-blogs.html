@@ -3,11 +3,10 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-<title>ilone</title>
+<title>Мисия Кестен</title>
 <link rel="stylesheet" href="resources/css/flexslider.css" type="text/css" />
 <link rel="stylesheet" href="resources/css/style.css" type="text/css" />
 <link rel="stylesheet" href="resources/css/media-queries.css" type="text/css" media="all" />
-
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 <script type="text/javascript" src="resources/js/jquery.easing.1.3.js"></script>
@@ -50,17 +49,16 @@
 			<div class="header-container">
 				<div class="logo-container">
 					<a class="logo" href="#home" title="Home">
-						<img src="resources/images/logo.png" alt="ilone - Portfolio Template">
+						<img src="resources/images/logo.jpg" alt="ilone - Portfolio Template">
 					</a>
 				</div>
-				<!--end logo-container-->
 				<nav class="main-navigation">
 					<ul class="nav">
 						<li class="current">
 							<a href="#home">Начало</a>
 						</li>
 						<li>
-							<a href="#news">Новини</a>
+							<a href="#blogs">Новини</a>
 						</li>
 						<li>
 							<a href="#mission">Мисия</a>
@@ -69,66 +67,52 @@
 							<a href="#chronology">Хронология</a>
 						</li>
 						<li>
+							<a href="#results">Резултати</a>
+						</li>
+						<li>
 							<a href="#about">За нас</a>
 						</li>
 						<li>
 							<a href="#contacts">Контакти</a>
 						</li>
 					</ul>
-					<!--end nav-->
 				</nav>
-				<!--end main-navigation-->
 			</div>
-			<!--end header-container-->
 		</header>
 		<!--END HEADER-->
 
-		<section id="news" class="blog-template" data-source="news.html">
+		<!-- SHORT BLOGS-->
+		<section id="blogs" class="blogs-template" data-source="blogs/short-blogs.html">
 			<div class="section-holder">
 				<div class="heading">
 					<h1>Новини</h1>
 					<nav>
 						<span class="section-nav-label">Категории</span>
-						<ul class="section-nav blog-categories">
+						<ul class="section-nav blogs-categories">
 							<li>
-								<a href="#all">Latest Posts</a>
+								<a href="#all">Всички</a>
 							</li>
 							<li>
-								<a href="#html">HTML</a>
+								<a href="#cat1">Категория1</a>
 							</li>
 							<li>
-								<a href="#css">CSS</a>
+								<a href="#cat2">Категория2</a>
 							</li>
 							<li>
-								<a href="#web-design">Web Design</a>
+								<a href="#cat3">Категория3</a>
 							</li>
 							<li>
-								<a href="#books">Books</a>
+								<a href="#cat4">Категория4</a>
 							</li>
 						</ul>
-						<!--end blog-categories-->
 					</nav>
 				</div>
-				<!--end heading-->
 
 				<div class="content">
 					<ul class="blog-posts">
-						<li data-tag="html, web-design, march, blah" data-slug="amazing-html5-history-object">
-							<a class="post-thumb read-more" href="blog-post.html">
-								<!-- <img src="resources/images/news/thumbs/01.jpg" alt=""> -->
-								<span class="hover-element"></span>
-							</a>
-							<div class="post-details">
-								<h5>Мисия Кестен търси своите училища</h5>
-								<p><em>В своята мисия, проектният екип има нужда от помощта на шест столични основни училища, чиито 
-									ученици от 5ти-6ти клас да „преброят” кестените. Те ще се запознаят с проблема, ще научат за 
-									начините за справяне с него и за това, как трябва да се грижат за едно дърво.</em></p>
-								<a class="read-more" href="blog-post.html">Научи повече</a>
-							</div>
-						</li>
-						<li data-tag="html, css, march" data-slug="designing-a-website-in-browser">
-							<a class="post-thumb read-more" href="blog-post.html">
-								<!-- <img src="resources/images/news/thumbs/01.jpg" alt=""> -->
+						<li data-tag="cat1" data-slug="blog1">
+							<a class="post-thumb read-more" href="blogs/blog1.html">
+								<img src="resources/images/news/thumbs/01.jpg" alt="">
 								<span class="hover-element"></span>
 							</a>
 							<div class="post-details">
@@ -136,18 +120,61 @@
 								<p><em>На 19.07, официално беше дадено начало на Мисия Кестен. Фондация Цвете подписа договор 
 									за финансиране и изпълнение на проекта с Програмата за подкрепа на НПО в България по 
 									Финансовия механизъм на Европейското икономическо пространство.</em></p>
-								<a class="read-more" href="blog-post.html">Научи повече</a>
+								<a class="read-more" href="blogs/blog1.html">Научи повече</a>
 							</div>
 						</li>
-						<li data-tag="css, web-design, february" data-slug="future-of-web-how-we-see-it">
-							<a class="post-thumb read-more" href="blog-post.html">
-								<!-- <img src="resources/images/news/thumbs/01.jpg" alt=""> -->
+
+						<li data-tag="cat1" data-slug="blog2">
+							<a class="post-thumb read-more" href="blogs/blog2.html">
+								<img src="resources/images/news/thumbs/01.jpg" alt="">
+								<span class="hover-element"></span>
+							</a>
+							<div class="post-details">
+								<h5>Мисия Кестен търси своите училища</h5>
+								<p><em>В своята мисия, проектният екип има нужда от помощта на шест столични основни училища, чиито 
+									ученици от 5ти-6ти клас да „преброят” кестените. Те ще се запознаят с проблема, ще научат за 
+									начините за справяне с него и за това, как трябва да се грижат за едно дърво.</em></p>
+								<a class="read-more" href="blogs/blog2.html">Научи повече</a>
+							</div>
+						</li>
+						
+						<li data-tag="cat1" data-slug="blog3">
+							<a class="post-thumb read-more" href="blogs/blog3.html">
+								<img src="resources/images/news/thumbs/01.jpg" alt="">
 								<span class="hover-element"></span>
 							</a>
 							<div class="post-details">
 								<h5>Да спасим в суматохата кестените</h5>
-								<p><em>Мисия Кестен е логично продължение на предходната инициатива на Списание 8, Да спасим в суматохат</p>
-								<a class="read-more" href="blog-post.html">Научи повече</a>
+								<p><em>Мисия Кестен е логично продължение на предходната инициатива на Списание 8, Да спасим в суматохата 
+									кестените.</p>
+								<a class="read-more" href="blogs/blog3.html">Научи повече</a>
+							</div>
+						</li>
+
+						<!--Dummy Blogs for the Pager-->
+						<li data-tag="cat1" data-slug="blog3">
+							<a class="post-thumb read-more" href="blogs/blog3.html">
+								<img src="resources/images/news/thumbs/01.jpg" alt="">
+								<span class="hover-element"></span>
+							</a>
+							<div class="post-details">
+								<h5>Да спасим в суматохата кестените</h5>
+								<p><em>Мисия Кестен е логично продължение на предходната инициатива на Списание 8, Да спасим в суматохата 
+									кестените.</p>
+								<a class="read-more" href="blogs/blog3.html">Научи повече</a>
+							</div>
+						</li>
+
+						<li data-tag="cat1" data-slug="blog3">
+							<a class="post-thumb read-more" href="blogs/blog3.html">
+								<img src="resources/images/news/thumbs/01.jpg" alt="">
+								<span class="hover-element"></span>
+							</a>
+							<div class="post-details">
+								<h5>Да спасим в суматохата кестените</h5>
+								<p><em>Мисия Кестен е логично продължение на предходната инициатива на Списание 8, Да спасим в суматохата 
+									кестените.</p>
+								<a class="read-more" href="blogs/blog3.html">Научи повече</a>
 							</div>
 						</li>
 					</ul>
@@ -157,35 +184,12 @@
 					<a class="next" href="#"></a>
 				</div>
 			</div>
-			<!--end section-holder-->
 		</section>
-		<!--END NEWS-->
+		<!--END SHORT BLOGS-->
 
 		<!--FOOTER-->
 		<footer id="footer">
 			<div class="footer-container">
-				<!-- <nav class="footer-navigation">
-					<ul class="nav">
-						<li class="current">
-							<a href="#home">Начало</a>
-						</li>
-						<li>
-							<a href="#news">Новини</a>
-						</li>
-						<li>
-							<a href="#mission">Мисия</a>
-						</li>
-						<li>
-							<a href="#chronology">Хронология</a>
-						</li>
-						<li>
-							<a href="#about">За нас</a>
-						</li>
-						<li>
-							<a href="#contacts">Контакти</a>
-						</li>
-					</ul>
-				</nav> -->
 				<span class="footer-info">
 					Мисия Кестен 2013
 				</span>

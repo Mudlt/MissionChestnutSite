@@ -808,8 +808,8 @@
 		var container = '.section-holder';
 		var heading = '.heading';
 		var posts = '.blog-posts li';
-		var filter = '.blog-categories li a, .blog-archives li a';
-		var category = '.blog-categories li a, a.category';
+		var filter = '.blogs-categories li a, .blog-archives li a';
+		var category = '.blogs-categories li a, a.category';
 		var archive = '.blog-archives li a, a.post-date, a.blog-post-date';
 		var archive_nav = '.blog-archives li a';
 
