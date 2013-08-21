@@ -47,7 +47,7 @@ var o = {
 	},
 
 	//Global/Page Animation Timing and Easing Settings
-	image_saturation: 0.3, //the amount of saturation applied to images from 0 to 1 where 0 is no saturation (grayscale) and 1 is normal saturation. *Note: no over-saturation is available.
+	image_saturation: 1, //the amount of saturation applied to images from 0 to 1 where 0 is no saturation (grayscale) and 1 is normal saturation. *Note: no over-saturation is available.
 	page_scroll_speed: 600, //speed of page scroll animation
 	page_scroll_easing: 'easeInOutExpo', //easing of page scroll animation 
 	page_switch_speed: 600, //page switch animation speed

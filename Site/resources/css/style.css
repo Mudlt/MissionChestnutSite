@@ -77,7 +77,7 @@ hr {
 
 /* ================================= TYPOGRAPHY =================================  */
 body, input, textarea {
-	font: 16px/24px 'Source Sans Pro', Arial, sans-serif;
+	font: 14px/20px Verdana, Arial, sans-serif;
 	color: #888;
 	/*background: url(../images/lines.png) top center;*/
 
@@ -527,7 +527,7 @@ For IE8
 section.home-template .section-holder {
 	position: relative;
 	width: 100%;
-	padding: 44px 0;
+	padding: 10px 0;
 }
 
 /*section.home-template .section-holder:before {
@@ -557,7 +557,12 @@ section.home-template .page-controls {
 	padding-bottom: 24px;
 	text-align: center;
 }
-	
+
+section.blogs-template,
+section.blogs-template .section-holder {
+	padding: 0;
+}	
+
 section.blogs-template .page-controls {
 	position: static;
 	width: 100%;
@@ -1080,7 +1085,7 @@ section.contacts-template textarea:-ms-input-placeholder {
 }
 
 .post-details {
-	padding: 24px 36px 36px 36px;
+	padding: 16px;
 	background-color: #f8f8f8;
 }
 
