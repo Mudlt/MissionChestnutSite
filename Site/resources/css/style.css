@@ -210,6 +210,7 @@ section .section-holder {
 	position: relative;
 	float: left;
 	width: 75%;
+	margin-left: 24px;
 }
 
 /*
@@ -224,12 +225,13 @@ For IE8
 	top: 10px;
 }*/
 
-/*.heading h1:before {
+.heading h1:before {
 	content: "";
 	position: absolute;
 	width: 3px;
 	height: 72px;
-	background-color: #e9562a;
+	/*background-color: #e9562a;*/
+	background-color: #8ba021;
 	top: -8px;
 	left: -16px;
 
@@ -238,7 +240,7 @@ For IE8
 	-ms-transform: rotate(-13deg);
 	-o-transform: rotate(-13deg);
 	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-}*/
+}
 
 .heading nav {
 	display: block;
@@ -1013,7 +1015,7 @@ section.contacts-template textarea:-ms-input-placeholder {
 	margin-bottom: 48px;
 }
 
-.blog-posts>li:last-child {
+.blog-posts>li:nth-child(3n+0) {
 	margin-right: 0;
 }
 
@@ -2186,7 +2188,7 @@ p.drop-cap.round:first-letter {
 	display: block;
 	position: relative;
 	float: left;
-	width: 31.66%;
+	width: 23.125%;
 	margin-right: 2.5%;
 	overflow: hidden;
 	padding-bottom: 16px;
@@ -2214,7 +2216,7 @@ p.drop-cap.round:first-letter {
 	background: transparent url(../images/style/shadow-members.png) right -16px no-repeat;
 }
 
-.team-members li:nth-child(3n+0) {
+.team-members li:nth-child(4n+0) {
 	margin-right: 0;
 }
 
@@ -2226,7 +2228,7 @@ p.drop-cap.round:first-letter {
 
 .team-members li .member-details {
 	width: 100%;
-	padding: 24px 36px 36px 36px;
+	padding: 16px;
 	background-color: #f8f8f8;
 
 	box-sizing: border-box;

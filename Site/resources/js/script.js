@@ -1,6 +1,6 @@
 "use strict";
 var o = {
-	//Blog Settings
+	//Home Settings
 	home: {
 		slider: {
 			animation: 'fade', //transition type. 'fade', 'slide'
@@ -9,6 +9,7 @@ var o = {
 			easing: 'easeOutQuad' //transition easing
 		}
 	},
+	//Blog Settings
 	blog: {
 		posts_per_page: 3, //post to be loaded/shown per page
 		masonry: {
@@ -62,8 +63,6 @@ var o = {
 	use_logo_in_dynamic_naviagtion: true, //whether or not to use the logo in the dynamic naviagtion
 	use_deeplink: true //enable or disable deeplink functionality
 };
-
-
 
 var firstLoad = true;
 var deeplink;
