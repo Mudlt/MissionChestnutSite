@@ -163,9 +163,8 @@ h6 {
 }
 
 blockquote {
-	padding-left: 24px;
-	border-left: 2px solid #e9562a;
-
+	/*padding-left: 24px;*/
+	/*border-left: 2px solid #e9562a;*/
 	font-style: italic;
 }
 
@@ -193,7 +192,6 @@ section .section-holder {
 	margin: 0 auto;
 	z-index: 1;
 	/*overflow: hidden;*/
-
 	min-height: 400px;
 }
 
@@ -201,7 +199,7 @@ section .section-holder {
 	position: relative;
 	width: 100%;
 	float: left;
-	padding: 30px 0;
+	padding-bottom: 60px;
 	z-index: 2;
 }
 
@@ -436,9 +434,9 @@ For IE8
 	left: 0;
 	top: 0;
 	width: 100%;
-	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1);
+	/*box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1);
 	-moz-box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1);
-	-webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1);
+	-webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1);*/
 	background-color: inherit;
 	z-index: 999;
 }
@@ -524,11 +522,11 @@ For IE8
 /* ================================= TEMPLATE SPECIFICS =================================  */
 section.home-template .section-holder {
 	position: relative;
-	/*width: 100%;*/
-	padding: 10px 0;
+	width: 100%;
+	padding-bottom: 88px;
 }
 
-/*section.home-template .section-holder:before {
+section.home-template .section-holder:before {
 	content: "";
 	display: block;
 	position: absolute;
@@ -545,7 +543,7 @@ section.home-template .page-controls {
 	position: absolute;
 	top: 44%;
 	z-index: 0;
-}*/
+}
 
 .welcome-text {
 	width: 960px;
@@ -2224,7 +2222,7 @@ p.drop-cap.round:first-letter {
 
 .team-members li .member-details {
 	width: 100%;
-	padding: 0 0 10px 0;
+	padding: 10px 0;
 	background-color: #f8f8f8;
 	text-align: center;
 	box-sizing: border-box;
@@ -2234,6 +2232,7 @@ p.drop-cap.round:first-letter {
 
 .team-members li .member-details h5 {
 	margin-bottom: 0;
+	margin-top: 0;
 	color: #222;
 }
 
