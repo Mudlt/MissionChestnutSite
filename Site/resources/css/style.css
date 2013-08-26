@@ -199,11 +199,12 @@ section .section-holder {
 	min-height: 400px;
 }
 
+
 .heading {
 	position: relative;
 	width: 100%;
 	float: left;
-	padding-bottom: 60px;
+	padding:20px 0 40px 0;
 	z-index: 2;
 }
 
@@ -438,9 +439,9 @@ For IE8
 	left: 0;
 	top: 0;
 	width: 100%;
-	/*box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1);
+	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1);
 	-moz-box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1);
-	-webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1);*/
+	-webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1);
 	background-color: inherit;
 	z-index: 999;
 }
@@ -489,26 +490,33 @@ For IE8
 .logo-container span {
 	display: block;
 }
-.eea-logo {
-	margin-left: 35px;
+
+.eealogo-container{
+	position: absolute;
+	right: 0;
+	top: 70px;
 }
+
 .main-navigation {
 	display: block;
 	float: right;
+	position: relative;
 }
 
 .nav {
 	display: block;
 	list-style: none;
 	float: right;
-	padding: 85px 0 15px 0;
+	padding: 64px 0;
 }
 
 .nav li {
 	float: left;
 	margin-left: 26px;
 }
-
+.nav li:last-child {
+	margin-right: 100px;
+}
 .nav li a {
 	position: relative;
 	text-decoration: none;
@@ -529,7 +537,7 @@ For IE8
 section.home-template .section-holder {
 	position: relative;
 	width: 100%;
-	padding-bottom: 88px;
+	padding-bottom: 128px;
 }
 
 section.home-template .section-holder:before {
@@ -551,6 +559,23 @@ section.home-template .page-controls {
 	z-index: 0;
 }
 
+section .short-news-holder {
+	width: 960px;
+	margin: 0 auto;
+	z-index: 1;
+}
+section .short-news-holder a {
+	text-decoration: none;
+}
+section .short-news-holder h5 {
+	font-size: 14px;
+	color: #fff;
+	line-height: 14px;
+	text-align: center;
+}
+section .short-news-holder p {
+	font-size: 13px;
+}
 .welcome-text {
 	width: 960px;
 	float: none;
