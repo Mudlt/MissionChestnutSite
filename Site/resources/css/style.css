@@ -168,6 +168,10 @@ blockquote {
 	font-style: italic;
 }
 
+p, blockquote  {
+	text-align:justify;
+}
+
 /* ================================= LAYOUT/CONTENT/BLOCKS/HEADINGS =================================  */
 section {
 	position: relative;
@@ -485,7 +489,9 @@ For IE8
 .logo-container span {
 	display: block;
 }
-
+.eea-logo {
+	margin-left: 35px;
+}
 .main-navigation {
 	display: block;
 	float: right;
@@ -495,7 +501,7 @@ For IE8
 	display: block;
 	list-style: none;
 	float: right;
-	padding: 64px 0;
+	padding: 85px 0 15px 0;
 }
 
 .nav li {
