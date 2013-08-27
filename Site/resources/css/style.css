@@ -2437,6 +2437,10 @@ p.drop-cap.round:first-letter {
 	margin: 20px;
 	width: 100%;
 }
+#about .partner-logo img {
+	width: 100%;
+}
+
 .parallax-viewport { 
 	position:relative; 
 	overflow:hidden; 
