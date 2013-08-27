@@ -2425,12 +2425,6 @@ p.drop-cap.round:first-letter {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
-#blogs h1.no-line {
-	margin-left: 0;
-}
-#blogs h1.no-line:before{
-	display: none;
-}
 
 .mission-problem-icons img,
 .mission-result-icons img {
@@ -2440,6 +2434,15 @@ p.drop-cap.round:first-letter {
 #about .partner-logo img {
 	width: 100%;
 }
+
+/*.blog-gallery-image {
+	height: 150px;
+	width: 150px;
+}
+
+.blog-gallery-image > img{
+	background-image: contain;
+}*/
 
 .parallax-viewport { 
 	position:relative; 
