@@ -4,7 +4,7 @@ div#timelineContainer {
 	border-left:2px solid #ccc;
 	margin:20px auto;
 	width:900px;
-	height: 2000px;
+	height: 1200px;
 }
 
 div.timelineToggle {
@@ -38,20 +38,17 @@ div.timelineMajor {
 
 .timelineMajor h2 {
 	background:url(../images/timeliner/timeline_century_tick.gif) left center no-repeat;
-	font-family:Palatino,"Times New Roman", Times, serif;
-	cursor: pointer;
-	font-size:3em;
 	font-weight:400;
 	margin:0 0 10px;
 	padding:4px 4px 4px 20px;
 }
 
 .timelineMajor h2 span {
-	background:#ccc;
+	background:#8aa03c;
 	-webkit-border-radius:4px;
 	-moz-border-radius:4px;
 	border-radius:4px;
-	color:#131313;
+	color:#fff;
 	letter-spacing:.1em;
 	line-height:1.7em;
 	padding:3px 5px 1px;
@@ -80,6 +77,7 @@ dl.timelineMinor {
 .timelineMinor dt a {
 	color:#999;
 	cursor:pointer;
+	text-decoration: none;
 }
 
 .timelineMinor dt a.closed {
@@ -89,11 +87,11 @@ dl.timelineMinor {
 }
 
 .timelineMinor dt a.open {
-	color:#7DBADF;
+	color:#8aa03c;
 }
 
 .timelineMinor dt a:hover {
-	color:#7DBADF;
+	color:#8aa03c;
 }
 
 .timelineMinor dd {
@@ -102,10 +100,10 @@ dl.timelineMinor {
 }
 
 .timelineMinor dd h3 {
-	color:#FFF;
 	clear:both;
 	float:left;
-	font-size:1.5em;
+	font-size: 1.3em;
+	font-weight: normal;
 	margin:0;
 	white-space:nowrap;
 }
