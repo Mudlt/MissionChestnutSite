@@ -93,23 +93,31 @@
 		<!--HOME SECTION-->
 		<section id="home" class="home-template">
 			<div class="section-holder">
-				<div id="parallax" class="parallax-viewport">
-					<div class="parallax-layer" style="width:1120px; height:430px;">
-						<img src="resources/images/slides/layer1.png" alt=""/>
-					</div>
-					<div class="parallax-layer" style="width:1024px; height:430px;">
-						<img src="resources/images/slides/layer2.png" alt="" />
-					</div>
-					<div class="parallax-layer" style="width:1120px; height:430px;">
-						<img src="resources/images/slides/layer3.png" alt=""/>
-					</div>
-					<div class="parallax-layer" style="width:960px; height:430px;">
-						<img src="resources/images/slides/layer4.png" alt=""/>
-					</div>
-					<div class="parallax-layer" style="width:863px; height:430px;">
-						<img src="resources/images/slides/layer5.png" alt=""/>
-					</div>
+				<div class="slider">
+					<ul class="slides">
+						<li>
+							<div id="parallax" class="parallax-viewport">
+								<div class="parallax-layer" style="width:1120px; height:430px;">
+									<img src="resources/images/slides/layer1.png" alt=""/>
+								</div>
+								<div class="parallax-layer" style="width:1024px; height:430px;">
+									<img src="resources/images/slides/layer2.png" alt="" />
+								</div>
+								<div class="parallax-layer" style="width:1120px; height:430px;">
+									<img src="resources/images/slides/layer3.png" alt=""/>
+								</div>
+								<div class="parallax-layer" style="width:960px; height:430px;">
+									<img src="resources/images/slides/layer4.png" alt=""/>
+								</div>
+								<div class="parallax-layer" style="width:863px; height:430px;">
+									<img src="resources/images/slides/layer5.png" alt=""/>
+								</div>
+							</div>
+							<h1 class="caption" data-offset-top="130" data-offset-left="120" data-direction="left" >Welcome to ilone</h1>
+						</li>
+					</ul>
 				</div>
+				
 				<div class="short-news-holder">
 					<div class="block one-third">
 						<a href="#/blogs/post/blog17"><h5>Мисия Кестен търси своите училища</h5></a>
@@ -134,43 +142,63 @@
 				<div class="heading">
 					<h1>Мисия</h1>
 				</div>
+
 				<div class="content">
 					<div class="block full-width">
 						<blockquote>“Мисия Кестен” разказва на учениците от няколко столични основни училища за това колко важни са кестените за София и как можем да се грижим за тях. С помощта на младите доброволци ще бъде създадена картотека с данни за кестените в шест градски градини и ще бъдат положени грижи за здравето на дърветата”.</blockquote>
 					</div>
 
+					<!-- Problems -->
 					<div class="block full-width">
 						<h4>Проблемът</h4>
 						<p>Листоминиращият молец вреди сериозно на емблематичните за българската столица кестенови дървета. Насекомото прави годишно поне по три поколения, като ларвите му се развиват в листата и ги унищожават. Много кестени губят значителна листна маса още в средата на месец юли, в следствие на което дървета се развиват по-бавно, по-чувствителни са (по отношение на екстремни условия като студ, засушаване и засоляване на почвата) и са по-податливи на атаките на други паразитни организми. Отслабеният организъм на дърветата, по-малкото листа и ограничената им способност да фотосинтезират имат значителен негативен ефект върху състоянието на средата. Кестените губят отчасти възможността си да влияят върху микроклимата, като през летните и есенните месеци рискът от прегряване и презасушаване на въздуха се увеличава. Отсъствието на листна маса води и до по-високи нива на праховото и газово замърсяване на въздуха.</p><br>
-						
-						<div class="mission-problem-icons">
-							<div class="block one-third">
-								<img src="resources/images/mission/leaf.png" alt=""></img>
-							</div>
-							<div class="block one-third">
-								<img src="resources/images/mission/larva.png" alt=""></img>
-							</div>
-							<div class="block one-third last">
-								<img src="resources/images/mission/moth.png" alt=""></img>
-							</div>
-						</div>
+
+						<ul class="works-gallery">
+							<li data-tag="problem" data-slug="item01" class="block one-third">
+								<a class="project-thumb to-project" href="items/item01.html">
+									<img src="resources/images/mission/leaf.png" alt=""></img>
+									<span class="hover-element"></span>
+								</a>
+							</li>
+							<li data-tag="problem" data-slug="item02" class="block one-third">
+								<a class="project-thumb to-project" href="items/item02.html">
+									<img src="resources/images/mission/larva.png" alt=""></img>
+									<span class="hover-element"></span>
+								</a>
+							</li>
+							<li data-tag="problem" data-slug="item03" class="block one-third last">
+								<a class="project-thumb to-project" href="items/item03.html">
+									<img src="resources/images/mission/moth.png" alt=""></img>
+									<span class="hover-element"></span>
+								</a>
+							</li>
+						</ul>
 					</div>
 
+					<!-- Solutions -->
 					<div class="block full-width">
 						<h4>Решението</h4>
 						<p>Листоминиращият молец вреди сериозно на емблематичните за българската столица кестенови дървета. Насекомото прави годишно поне по три поколения, като ларвите му се развиват в листата и ги унищожават. Много кестени губят значителна листна маса още в средата на месец юли, в следствие на което дървета се развиват по-бавно, по-чувствителни са (по отношение на екстремни условия като студ, засушаване и засоляване на почвата) и са по-податливи на атаките на други паразитни организми. Отслабеният организъм на дърветата, по-малкото листа и ограничената им способност да фотосинтезират имат значителен негативен ефект върху състоянието на средата. Кестените губят отчасти възможността си да влияят върху микроклимата, като през летните и есенните месеци рискът от прегряване и презасушаване на въздуха се увеличава. Отсъствието на листна маса води и до по-високи нива на праховото и газово замърсяване на въздуха.</p><br>
-						
-						<div class="mission-result-icons">
-							<div class="block one-third">
-								<img src="resources/images/mission/leafs.png" alt=""></img>
-							</div>
-							<div class="block one-third">
-								<img src="resources/images/mission/bird-house.png" alt=""></img>
-							</div>
-							<div class="block one-third last">
-								<img src="resources/images/mission/trap.png" alt=""></img>
-							</div>
-						</div>
+						<ul class="works-gallery">
+							<li data-tag="solution" data-slug="item04" class="block one-third">
+								<a class="project-thumb to-project" href="items/item04.html">
+									<img src="resources/images/mission/leafs.png" alt=""></img>
+									<span class="hover-element"></span>
+								</a>
+							</li>
+							<li data-tag="solution" data-slug="item05" class="block one-third">
+								<a class="project-thumb to-project" href="items/item05.html">
+									<img src="resources/images/mission/bird-house.png" alt=""></img>
+									<span class="hover-element"></span>
+								</a>
+							</li>
+							<li data-tag="solution" data-slug="item06" class="block one-third last">
+								<a class="project-thumb to-project" href="items/item06.html">
+									<img src="resources/images/mission/trap.png" alt=""></img>
+									<span class="hover-element"></span>
+								</a>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -467,6 +495,18 @@
 							</li>
 							<li>
 								<a href="#event">Събития</a>
+							</li>
+							<li class="separate">
+								<a href="#2010">2010</a>
+							</li>
+							<li>
+								<a href="#2010">2011</a>
+							</li>
+							<li>
+								<a href="#2010">2012</a>
+							</li>
+							<li>
+								<a href="#2010">2013</a>
 							</li>
 						</ul>
 					</nav>
