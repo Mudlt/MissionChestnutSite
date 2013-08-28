@@ -1677,7 +1677,7 @@ a.load-more:hover {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 
-	background-color: #e9562a;
+	background-color: transparent;
 	padding-bottom: 12px;
 	color: #fff;
 
@@ -1692,22 +1692,21 @@ a.load-more:hover {
 	display: block;
 	padding: 12px 45px 12px 48px;
 	text-decoration: none;
-	color: #f2c4b6;
+	color: #000;
 }
 
 .widget li span {
 	display: block;
 	padding: 12px 45px 12px 48px;
 	font-weight: 600;
-	color: #fff;
-	background-color: #da4417;
-
+	color: #000;
+	background-color: transparent;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
 	cursor: default;
 }
 
 .widget li a:hover {
-	background-color: #da4417;
-	color: #fff
+	color: #da4417
 }
 
 /* MEDIA GALLERY */
