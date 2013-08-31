@@ -664,25 +664,13 @@
 					</div>
 
 					<div class="block one-half last">
-						
-						<form action="form-submit.php" method="post" id="contact-form" class="contact-form">
-							
-							<label for="name">Име*</label>
-							<input placeholder="Име*" id="name" type="text" name="name">
-
-
-							<label for="email">Имейл*</label>
-							<input placeholder="Имейл*" id="email" type="text" name="email">
-
-
-							<label for="message">Съобщение*</label>
-							<textarea placeholder="Съобщение*" id="message" name="message"></textarea>
-
-							<input id="site" type="text" name="contact_site">
-
-							<input id="submit" type="submit" value="Изпрати">
-						</form>
-
+                                            <label for="name">Име</label>
+                                            <input placeholder="Име" id="name" type="text" name="name">
+                                            <label for="email">Имейл</label>
+                                            <input placeholder="Имейл" id="email" type="text" name="email">
+                                            <label for="message">Съобщение</label>
+                                            <textarea placeholder="Съобщение" id="message" name="message"></textarea>
+                                            <input id="submit" type="submit" value="Изпрати" onClick='SubmitFeedback();'>
 					</div>
 				</div>
 			</div>
@@ -709,6 +697,27 @@
 		    });
 		    $.timeliner();
 		  });
+                  
+                    function SubmitFeedback() {        
+                        var data = '{' + 
+                            '"username":"Pesho"' +
+                            ',"email":"pesho@gbg.bg"' +
+                            ',"message":"Web site feedback message"' +
+                            '}';            
+			$.ajax({
+                            type: "POST", 
+                            url: "http://91.196.125.129/$sitepreview/kesteni.bg/MissionChestnutWebService/MissionChestnutWebService.svc/SendFeedback",
+                            dataType: "json",
+                            contentType: "application/json; charset=utf-8",  
+                            data: data, 
+                            success: function (result) {
+                                alert('Успешно изпращане на съобщение!');
+                            },
+                            error: function () {
+                                alert('Грешка при изпращане на съобщение!');
+                            }
+			});
+                  }
   		</script>
 	</body>
 </html>
