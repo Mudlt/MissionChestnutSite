@@ -494,7 +494,7 @@ For IE8
 .eealogo-container{
 	position: absolute;
 	right: 0;
-	top: 70px;
+	top: 80px;
 }
 
 .main-navigation {
@@ -507,7 +507,7 @@ For IE8
 	display: block;
 	list-style: none;
 	float: right;
-	padding: 64px 0;
+	padding: 74px 0 54px 0;
 }
 
 .nav li {
