@@ -537,7 +537,7 @@ For IE8
 section.home-template .section-holder {
 	position: relative;
 	width: 100%;
-	padding-bottom: 128px;
+	padding-bottom: 158px;
 }
 
 section.home-template .section-holder:before {
@@ -559,22 +559,27 @@ section.home-template .page-controls {
 	z-index: 0;
 }
 
-section .short-news-holder {
+section.home-template .short-news-holder {
 	width: 960px;
 	margin: 0 auto;
 	z-index: 1;
 }
-section .short-news-holder a {
+ 
+section.home-template .short-news-holder a {
 	text-decoration: none;
 }
-section .short-news-holder h5 {
+
+section.home-template .short-news-holder h5 {
 	font-size: 14px;
 	color: #fff;
-	line-height: 14px;
 	text-align: center;
+	margin-bottom: 6px;
 }
-section .short-news-holder p {
+section.home-template .short-news-holder p {
 	font-size: 13px;
+	text-align: left;
+	color:#fff;
+	opacity: 0.6;
 }
 .welcome-text {
 	width: 960px;
@@ -1422,7 +1427,7 @@ input[type="submit"]:hover {
 	width: 960px;
 	margin: 0 auto;
 	position: relative;
-	height: 430px;
+	height: 400px;
 	z-index: 1;
 }
 
@@ -2470,6 +2475,6 @@ div.separator-after:after {
 	overflow:hidden; 
 	margin: 0 auto;
 	width: 960px;
-	height: 430px;
+	height: 400px;
 }
 .parallax-layer { position:absolute; }
