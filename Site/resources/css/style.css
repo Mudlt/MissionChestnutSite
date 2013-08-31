@@ -572,7 +572,7 @@ section.home-template .short-news-holder a {
 section.home-template .short-news-holder h5 {
 	font-size: 14px;
 	color: #fff;
-	text-align: center;
+	text-align: left;
 	margin-bottom: 6px;
 }
 section.home-template .short-news-holder p {
@@ -670,7 +670,6 @@ section.contacts-template {
 	padding-top: 0px;
 	padding-bottom: 120px;
 	background-color: #095069;
-
 	color: #a8d6e6;
 }
 section.contacts-template .heading {
@@ -2431,10 +2430,11 @@ p.drop-cap.round:first-letter {
 	box-sizing: border-box;
 }
 
-.mission-problem-icons img,
-.mission-result-icons img {
-	margin: 20px;
-	width: 100%;
+.mission-items .project-thumb {
+	padding: 30px;
+}
+.mission-items .project-thumb:hover {
+	 -webkit-filter: contrast(150%);
 }
 #about .partner-logo img {
 	width: 100%;
