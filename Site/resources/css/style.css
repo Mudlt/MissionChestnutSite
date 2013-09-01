@@ -578,8 +578,7 @@ section.home-template .short-news-holder h5 {
 section.home-template .short-news-holder p {
 	font-size: 13px;
 	text-align: left;
-	color:#fff;
-	opacity: 0.6;
+	color:#888;
 }
 .welcome-text {
 	width: 960px;
@@ -629,10 +628,13 @@ section.blogs-template .page-controls a:hover {
 	color: #fff;
 }
 
+section.results-template.inverse-color {
+	background: #212324 url(../images/style/slider-pattern.png);
+}
 section.inverse-color {
 	margin-top: 152px;
 	padding-top: 0px;
-	background: #222 url(../images/style/slider-pattern.png);
+	background: #2e2115 url(../images/style/slider-pattern.png);
 }
 
 section.inverse-color .heading {
@@ -1382,7 +1384,7 @@ input[type="submit"]:hover {
 	width: 100%;
 	float: left;
 	clear: both;
-	background-color: #0a4357;
+	background-color: #2e2115;
 }
 
 .footer-container {
@@ -1415,7 +1417,7 @@ input[type="submit"]:hover {
 .footer-info {
 	display: block;
 	float: left;
-	color: #417e94;
+	color: #888;
 	font-size: 14px;
 	padding: 36px 0;
 }
@@ -2395,7 +2397,7 @@ p.drop-cap.round:first-letter {
 }
 
 .hover-element.lightbox-icon {
-
+	border: 2px solid #fff;
 	background: #8aa03c url(../images/style/zoom.png) center no-repeat;
 }
 
@@ -2432,29 +2434,20 @@ p.drop-cap.round:first-letter {
 .mission-items .project-thumb {
 	padding: 30px;
 }
-.mission-items .project-thumb:hover {
-	 -webkit-filter: contrast(150%);
-}
-.mission-items.solutions .hover-element{
-	background-color: #5f3713;
-}
+
 #about .partner-logo img {
 	width: 100%;
 }
-#about .partner-logo.small img {
-	width: 180px;
-	height: 180px;
-	text-align: center; 
+#about .partner-logo.small:first-child {
+	margin-top: 30px;
 }
-/*.blog-gallery-image {
-	height: 150px;
-	width: 150px;
+.block.yourGardener{
+	padding-top: 75px;
 }
-
-.blog-gallery-image > img{
-	background-image: contain;
-}*/
-
+.block.bspb {
+	margin-left: 20px;
+	margin-right: 0px;
+}
 .parallax-viewport { 
 	position:relative; 
 	overflow:hidden; 
