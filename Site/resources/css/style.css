@@ -897,7 +897,8 @@ section.contacts-template textarea:-ms-input-placeholder {
 }
 
 .project-thumb:hover .hover-element,
-.team-members li:hover .hover-element {
+.team-members li:hover .hover-element,
+.parallax-icon:hover .hover-element {
 	transform: scale(1,1);
 	-ms-transform: scale(1,1); /* IE 9 */
 	-webkit-transform: scale(1,1); /* Safari and Chrome */
@@ -2456,3 +2457,32 @@ p.drop-cap.round:first-letter {
 	height: 400px;
 }
 .parallax-layer { position:absolute; }
+.parallax-layer .parallax-icon {
+	width: 64px;
+	height: 64px;
+	position: absolute;
+}
+.parallax-layer .parallax-icon.bird {
+	top: 80px;
+	left: 580px;
+}
+.parallax-layer .parallax-icon.home {
+	top: 150px;
+	left: 470px;
+}
+.parallax-layer .parallax-icon.trap {
+	top: 200px;
+	left: 580px;
+}
+.parallax-layer .parallax-icon.leaf {
+	top: 270px;
+	right: 180px;
+}
+.parallax-layer .parallax-icon.larva {
+	top: 280px;
+	left: 410px;
+}
+.parallax-layer .parallax-icon.moth {
+	top: 150px;
+	right: 170px;
+}
