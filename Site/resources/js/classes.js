@@ -1830,7 +1830,7 @@
 			ctx.arc(11.5, 11.5, 9.5, Math.PI * 1.5, (Math.PI * 1.5) + (degree * (Math.PI / 180)), false);
 			ctx.moveTo(0, 0);
 			ctx.closePath();
-			ctx.strokeStyle = "#e9562a";
+			ctx.strokeStyle = "#8aa03c";
 			ctx.lineWidth = 2;
 			ctx.stroke();
 		}
