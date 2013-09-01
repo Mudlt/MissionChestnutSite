@@ -2076,15 +2076,39 @@
 			};
 			var gMap = new google.maps.Map(Map[0], mapOptions);
 
-			if(Map.attr('data-pointer-title') != undefined)
-			{
-				var marker = new google.maps.Marker({
-					position: lat_long,
-					map: gMap,
-					title: Map.attr('data-pointer-title')
-				});
-			}
-
+//			if(Map.attr('data-pointer-title') != undefined)
+//			{
+//				var marker = new google.maps.Marker({
+//					position: lat_long,
+//					map: gMap,
+//					title: Map.attr('data-pointer-title')
+//				});
+//			}     
+                        var postData = '{"userName":"School101","password":"School101"}';
+			$.ajax({
+				type: "POST", 
+				url: "http://localhost/WebServiceTest/MissionChestnutWebService.svc/GetAll",
+                                dataType: "json",
+				contentType: "application/json; charset=utf-8",  
+				data: postData, 
+				success: function (result) {
+                                    for (var i = 0; i < result.Trees.length; i++) {
+                                        var treeLocation = new google.maps.LatLng(
+                                            parseFloat(result.Trees[i].Latitude), 
+                                            parseFloat(result.Trees[i].Longitude)
+                                        );
+                                        var marker = new google.maps.Marker({
+                                            position: treeLocation,
+                                            map: gMap,
+                                            icon: 'resources/images/map/blue-dot.png'
+                                        });
+                                    }
+				},
+				error: function() {
+                                    alert('Error loading trees!');
+				}
+			});
+                        
 			_this_.find(map_opener).addClass('loading-opener');
 
 			google.maps.event.addListener(gMap, 'idle', function()

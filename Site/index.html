@@ -472,15 +472,19 @@
 		    $.timeliner();
 		  });
                   
-                    function SubmitFeedback() {        
+                    function SubmitFeedback() {
+                        var name = $("#name").val(); 
+                        var email = $("#email").val(); 
+                        var message = $("#message").val(); 
                         var data = '{' + 
-                            '"username":"Pesho"' +
-                            ',"email":"pesho@gbg.bg"' +
-                            ',"message":"Web site feedback message"' +
+                            '"username":"' + name + '"' +
+                            ',"email":"' + email + '"' +
+                            ',"message":"' + message + '"' +
                             '}';            
 			$.ajax({
                             type: "POST", 
-                            url: "http://91.196.125.129/$sitepreview/kesteni.bg/MissionChestnutWebService/MissionChestnutWebService.svc/SendFeedback",
+                            //url: "http://91.196.125.129/$sitepreview/kesteni.bg/MissionChestnutWebService/MissionChestnutWebService.svc/SendFeedback",
+                            url: "http://localhost/WebServiceTest/MissionChestnutWebService.svc/SendFeedback",
                             dataType: "json",
                             contentType: "application/json; charset=utf-8",  
                             data: data, 
