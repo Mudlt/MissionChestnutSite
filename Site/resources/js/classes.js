@@ -2504,7 +2504,7 @@ function switchPage(__data)
 					{
 
 						var new_content_data = !__data.data_container_self ? $(data).find(__data.data_container).children() : $(data).find(__data.data_container);
-
+						
 						//console.log(new_content_data);
 						if(!__data.do_not_append)
 						{
@@ -2552,6 +2552,12 @@ function switchPage(__data)
 
 						if(__data.success)
 						{
+							//setup timeliner
+							var timeliner = __data.section.find('#timelineContainer').length > 0 ? true :false;
+							if(timeliner)
+							{
+								$.timeliner();
+							}
 							__data.success($(data));	
 						}
 						
