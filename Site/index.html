@@ -52,7 +52,7 @@
 		<header id="header">
 			<div class="header-container">
 				<div class="logo-container">
-					<a href="#home" title="Начало">
+					<a class="logo" href="#home" title="Начало">
 						<img src="resources/images/logos/logo.png" alt="logo"></img>
 					</a>
 				</div>
@@ -356,61 +356,6 @@
 		</section>
 		<!--END ABOUT SECTION-->
 
-		<!--BLOGS SECTION-->
-		<!-- <section id="blogs" class="blogs-template" data-source="blogs/short-blogs.html">
-			<div class="section-holder">
-				<div class="heading">
-					<h1>Новини</h1>
-					<nav>
-						<span class="section-nav-label">Категории</span>
-						<ul class="section-nav blog-categories">
-							<li>
-								<a href="#all">Всички</a>
-							</li>
-							<li>
-								<a href="#blog">Новини</a>
-							</li>
-							<li>
-								<a href="#publication">Публикации</a>
-							</li>
-							<li>
-								<a href="#event">Събития</a>
-							</li>
-							<li class="separate">
-								<a href="#2010">2010</a>
-							</li>
-							<li>
-								<a href="#2011">2011</a>
-							</li>
-							<li>
-								<a href="#2013">2013</a>
-							</li>
-						</ul>
-					</nav>
-				</div>
-				
-				<div class="content">
-					<ul class="blog-posts">
-						<li data-tag="blog" data-slug="blog01">
-							<a class="post-thumb read-more" href="blogs/blog01.html">
-								<span class="hover-element"></span>
-							</a>
-							<div class="post-details">
-								<h5>Започнахме!</h5>
-								<p><em>На 19.07 фондация Цвете подписа договор за финансиране и изпълнение на проект Мисия Кестен с Програмата за подкрепа на НПО в България по ФМ на ЕИП.</em></p>
-								<a class="read-more" href="blogs/blog01.html">Още</a>
-							</div>
-						</li>
-					</ul>
-				</div>
-				<div class="page-controls">
-					<a class="previous" href="#"></a>
-					<a class="next" href="#"></a>
-				</div>
-			</div>
-		</section> -->
-		<!--END BLOGS SECTION-->
-
 		<!--CONTACTS SECTION-->
 		<section id="contacts" class="contacts-template">
 			<div class="section-holder">
@@ -423,17 +368,14 @@
 					<div class="block one-half">
 						<div class="contacts-info">
 							<p>Желаещите да се включат в акцията училища, ученици и всички съмишленици могат да ни пишат тук, 
-								на страницата на проекта във <a href="https://www.facebook.com/MissionChestnut" target="_blank">Facebook</a>, или да се свържат с
-								ръководителя на проекта, Веселин Цветанов:</p>
+								на страницата на проекта във Facebook, или да се свържат с
+								ръководителя на проекта, <strong>Веселин Цветанов</strong>:</p>
 							<br>
-							<p>Имейл: veselintsvetanov@gmail.com</p>
-							<p>Телефон: 0898 63 11 06</p>
-							<!-- <a class="social-icon" href="http://kesteni.bg">
-								<img src="resources/images/social/dribbble.png" alt="dribbble"/>
-							</a>
-							<a class="social-icon" href="http://facebook.com">
+							<p>Имейл: <strong>veselintsvetanov@gmail.com</strong></p>
+							<p>Телефон: <strong>0898 63 11 06</strong></p><br>
+							<a class="social-icon" href="https://www.facebook.com/MissionChestnut">
 								<img src="resources/images/social/facebook.png" alt="facebook"/>
-							</a> -->
+							</a>
 						</div>
 					</div>
 
@@ -463,13 +405,14 @@
 
 		<script type="text/javascript" src="resources/js/jquery.parallax.js"></script>
 		<script type="text/javascript" src="resources/js/jquery.event.frame.js"></script>
+		<script type="text/javascript" src="resources/js/timeliner.js"></script>
 		<script>
 		  jQuery(document).ready(function(){
 		    $('#parallax .parallax-layer')
 		    .parallax({
 		      mouseport: jQuery('#parallax')
 		    });
-		    $.timeliner();
+		    // $.timeliner();
 		  });
                   
                     function SubmitFeedback() {

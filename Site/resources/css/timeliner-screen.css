@@ -75,13 +75,13 @@ dl.timelineMinor {
 }
 
 .timelineMinor dt a {
-	color:#999;
+	color:#000;
 	cursor:pointer;
 	text-decoration: none;
 }
 
 .timelineMinor dt a.closed {
-	color:#999;
+	color:#000;
 	font-size:1em;
 	margin-left:0;
 }
@@ -95,7 +95,7 @@ dl.timelineMinor {
 }
 
 .timelineMinor dd {
-	padding-left:24px;
+	padding-left: 50px;
 	width:100%;
 }
 
@@ -107,6 +107,15 @@ dl.timelineMinor {
 	margin:0;
 	white-space:nowrap;
 }
+.timelineMinor dd h5 {
+	clear:both;
+	float:left;
+	font-size: 1em;
+	font-weight: normal;
+	margin:0;
+	color: #999;
+	white-space:nowrap;
+}
 
 .timelineEvent p {
 	clear:left;
@@ -114,8 +123,11 @@ dl.timelineMinor {
 	line-height:1.5em;
 	margin:6px 0 10px;
 	width:500px;
+	color: #000;
 }
-
+.timelineEvent p .box-loader-link {
+	margin-left: 10px;
+}
 .timelineEvent h4 {
 	clear:left;
 	float:left;
