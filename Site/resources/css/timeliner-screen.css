@@ -4,7 +4,7 @@ div#timelineContainer {
 	border-left:2px solid #ccc;
 	margin:20px auto;
 	width:900px;
-	height: 1200px;
+	height: 1700px;
 }
 
 div.timelineToggle {
@@ -79,9 +79,19 @@ dl.timelineMinor {
 	cursor:pointer;
 	text-decoration: none;
 }
+.timelineMinor dt.publication a {
+	color:#888;
+	cursor:pointer;
+	text-decoration: none;
+}
 
 .timelineMinor dt a.closed {
 	color:#000;
+	font-size:1em;
+	margin-left:0;
+}
+.timelineMinor dt.publication a.closed {
+	color:#888;
 	font-size:1em;
 	margin-left:0;
 }

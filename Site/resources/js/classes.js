@@ -1830,7 +1830,7 @@
 			ctx.arc(11.5, 11.5, 9.5, Math.PI * 1.5, (Math.PI * 1.5) + (degree * (Math.PI / 180)), false);
 			ctx.moveTo(0, 0);
 			ctx.closePath();
-			ctx.strokeStyle = "#e9562a";
+			ctx.strokeStyle = "#8aa03c";
 			ctx.lineWidth = 2;
 			ctx.stroke();
 		}
@@ -2529,7 +2529,7 @@ function switchPage(__data)
 					{
 
 						var new_content_data = !__data.data_container_self ? $(data).find(__data.data_container).children() : $(data).find(__data.data_container);
-
+						
 						//console.log(new_content_data);
 						if(!__data.do_not_append)
 						{
@@ -2577,6 +2577,12 @@ function switchPage(__data)
 
 						if(__data.success)
 						{
+							//setup timeliner
+							var timeliner = __data.section.find('#timelineContainer').length > 0 ? true :false;
+							if(timeliner)
+							{
+								$.timeliner();
+							}
 							__data.success($(data));	
 						}
 						

@@ -53,7 +53,7 @@ a {
 	background: transparent;
 	text-decoration: underline;
 	outline: none;
-	color: #ec4316;
+	color: #5f3713;
 
 	-webkit-transition: color 0.3s, background-color 0.3s;
     -moz-transition: color 0.3s, background-color 0.3s;
@@ -164,7 +164,7 @@ h6 {
 
 blockquote {
 	/*padding-left: 24px;*/
-	/*border-left: 2px solid #e9562a;*/
+	/*border-left: 2px solid #8aa03c;*/
 	font-style: italic;
 }
 
@@ -225,7 +225,7 @@ For IE8
 	font-size: 80px;
 	font-weight: normal;
 	margin-right: 5px;
-	color: #e9562a;
+	color: #8aa03c;
 	top: 10px;
 }*/
 
@@ -268,7 +268,7 @@ For IE8
 	position: relative;
 	font: 16px/16px 'webelem';
 	margin-left: 16px;
-	color: #e9562a;
+	color: #8aa03c;
 }
 
 .section-nav-label.close:after {
@@ -279,7 +279,7 @@ For IE8
 	position: absolute;
 	right: 0;
 	margin-top: 24px;
-	background-color: #e9562a;
+	background-color: #8aa03c;
 	padding: 24px 36px 36px 36px;
 	color: #f2c4b6;
 	z-index: 10;
@@ -315,7 +315,7 @@ For IE8
 	right: 0;
 	margin-top: 24px;
 
-	background-color: #e9562a;
+	background-color: #8aa03c;
 	padding: 12px 0;
 	color: #fff;
 	z-index: 10;
@@ -530,7 +530,7 @@ For IE8
 }
 
 .nav li a:hover {
-	color: #e9562a;
+	color: #8aa03c;
 }
 
 /* ================================= TEMPLATE SPECIFICS =================================  */
@@ -578,8 +578,7 @@ section.home-template .short-news-holder h5 {
 section.home-template .short-news-holder p {
 	font-size: 13px;
 	text-align: left;
-	color:#fff;
-	opacity: 0.6;
+	color:#888;
 }
 .welcome-text {
 	width: 960px;
@@ -610,7 +609,7 @@ section.blogs-template .page-controls a {
 	font-size: 16px;
 	line-height: 24px;
 	padding: 10px 20px 14px 20px;
-	background-color: #e9562a;
+	background-color: #8aa03c;
 	color: #f2c4b6;
 }
 
@@ -629,10 +628,13 @@ section.blogs-template .page-controls a:hover {
 	color: #fff;
 }
 
+section.results-template.inverse-color {
+	background: #212324 url(../images/style/slider-pattern.png);
+}
 section.inverse-color {
 	margin-top: 152px;
 	padding-top: 0px;
-	background: #222 url(../images/style/slider-pattern.png);
+	background: #2e2115 url(../images/style/slider-pattern.png);
 }
 
 section.inverse-color .heading {
@@ -669,8 +671,8 @@ section.contacts-template {
 	margin-top: 152px;
 	padding-top: 0px;
 	padding-bottom: 120px;
-	background-color: #095069;
-	color: #a8d6e6;
+	/*background-color: #095069;
+	color: #a8d6e6;*/
 }
 section.contacts-template .heading {
 	margin-top: 72px;
@@ -681,7 +683,7 @@ section.contacts-template h1 {
 }
 
 section.contacts-template h1:before {
-	background-color: #0a4357;
+	background-color: #8ba021;
 }
 
 section.contacts-template .section-nav-label {
@@ -705,47 +707,46 @@ section.contacts-template .section-info {
 }
 
 section.contacts-template .social-icon {
-	background-color: #1b647e;
+	background-color: #8ba021;
 }
 
 section.contacts-template .social-icon:hover {
-	background-color: #0a4357;
+	background-color: #616d25;
 }
-
+section.contacts-template label {
+	color:#fff;
+}
 section.contacts-template input, 
 section.contacts-template textarea {
-	background-color: #236A83;
-	border-color: #0e4e64;
+	background-color: #8ba021;
+	border: none;
 	color: #fff;
 }
 
 section.contacts-template input:focus, 
 section.contacts-template textarea:focus {
+	background-color: #616d25;
 	border-color: #0a4357;
+	color: #fff;
 }
 
 section.contacts-template input[type="submit"]:hover {
-	background-color: #0a4357;
+	background-color: #616d25;
 }
 
 section.contacts-template input::-webkit-input-placeholder, 
 section.contacts-template textarea::-webkit-input-placeholder {
-   color: #a8d6e6;
+   color: #fff;
 }
 
 section.contacts-template input:-moz-placeholder, 
 section.contacts-template textarea:-moz-placeholder {
-   color: #a8d6e6;  
-}
-
-section.contacts-template input::-moz-placeholder, 
-section.contacts-template textarea::-moz-placeholder {
-   color: #a8d6e6;  
+   color: #fff;  
 }
 
 section.contacts-template input:-ms-input-placeholder, 
 section.contacts-template textarea:-ms-input-placeholder {  
-   color: #a8d6e6;  
+   color: #fff;  
 }
 
 /* ================================= WORKS TEMPLATE =================================  */
@@ -847,7 +848,7 @@ section.contacts-template textarea:-ms-input-placeholder {
 	top: 50%;
 	margin-top: -24px;
 
-	background-color: #e9562a;
+	background-color: #8aa03c;
 	color: #fff;
 
 	-webkit-border-radius: 26px;
@@ -896,7 +897,8 @@ section.contacts-template textarea:-ms-input-placeholder {
 }
 
 .project-thumb:hover .hover-element,
-.team-members li:hover .hover-element {
+.team-members li:hover .hover-element,
+.parallax-icon:hover .hover-element {
 	transform: scale(1,1);
 	-ms-transform: scale(1,1); /* IE 9 */
 	-webkit-transform: scale(1,1); /* Safari and Chrome */
@@ -962,13 +964,13 @@ section.contacts-template textarea:-ms-input-placeholder {
 }
 
 .project-nav li a.to-project:hover {
-	color: #e9562a;
+	color: #8aa03c;
 }
 
 /* ================================= ABOUT TEMPLATE =================================  */
 .pin-box {
 	position: relative;
-	border-top: 2px solid #e9562a;
+	border-top: 2px solid #8aa03c;
 }
 
 .pin-box:after {
@@ -1008,7 +1010,7 @@ section.contacts-template textarea:-ms-input-placeholder {
 	left: 0;
 	top: 0;
 
-	background-color: #e9562a;
+	background-color: #8aa03c;
 	color: #fff;
 
 	-webkit-border-radius: 26px;
@@ -1021,7 +1023,7 @@ section.contacts-template textarea:-ms-input-placeholder {
 	position: relative;
 	margin: 24px;
 	padding: 24px 36px 36px 36px;
-	background-color: #e9562a;
+	background-color: #8aa03c;
 	color: #f2c4b6;
 }
 
@@ -1097,7 +1099,7 @@ section.contacts-template textarea:-ms-input-placeholder {
 	top: 100%;
 	margin-top: -27px;
 
-	background-color: #e9562a;
+	background-color: #8aa03c;
 	color: #fff;
 
 	-webkit-border-radius: 26px;
@@ -1135,7 +1137,7 @@ section.contacts-template textarea:-ms-input-placeholder {
 }
 
 .blog-posts li:hover .post-details .read-more {
-	color: #e9562a;
+	color: #8aa03c;
 }
 
 .single-post-thumb {
@@ -1167,7 +1169,7 @@ section.contacts-template textarea:-ms-input-placeholder {
 	left: 0;
 	text-decoration: none;
 	padding: 24px;
-	background-color: #E9562A;
+	background-color: #8aa03c;
 	color: #FBF4E6;
 	font-weight: 600;
 	letter-spacing: -1px;
@@ -1304,7 +1306,7 @@ a.reply-btn {
 }
 
 a.reply-btn:hover {
-	background-color: #e9562a;
+	background-color: #8aa03c;
 	color: #fff;
 }
 
@@ -1359,7 +1361,7 @@ input[type="submit"] {
 	width: auto;
 	padding: 12px 36px;
 	border: none;
-	background-color: #e9562a;
+	background-color: #8aa03c;
 	color: #fff;
 
 	cursor: pointer;
@@ -1383,7 +1385,7 @@ input[type="submit"]:hover {
 	width: 100%;
 	float: left;
 	clear: both;
-	background-color: #0a4357;
+	background-color: #2e2115;
 }
 
 .footer-container {
@@ -1416,7 +1418,7 @@ input[type="submit"]:hover {
 .footer-info {
 	display: block;
 	float: left;
-	color: #417e94;
+	color: #888;
 	font-size: 14px;
 	padding: 36px 0;
 }
@@ -1495,7 +1497,7 @@ input[type="submit"]:hover {
 }
 
 .flex-control-paging li a.flex-active {
-	background-color: #e9562a;
+	background-color: #8aa03c;
 	opacity: 1;
 
 	transform: scale(1,1);
@@ -1506,7 +1508,7 @@ input[type="submit"]:hover {
 }
 
 .flex-control-paging li a:hover {
-	background-color: #e9562a;
+	background-color: #8aa03c;
 	opacity: 1;
 }
 
@@ -1540,7 +1542,7 @@ canvas.slider-timer {
 }
 
 h1.caption {
-	background: #e9562a;
+	background: #8aa03c;
 	font-size: 49px;
 	color: #fff;
 	font-weight: 600;
@@ -1582,7 +1584,7 @@ h4.caption {
 	text-decoration: none;
 	margin-left: 5px;
 	/*background-color: #236f8a;*/
-	background-color: #e9562a;
+	background-color: #8aa03c;
 
 	-webkit-border-radius: 25px;
 	-moz-border-radius: 25px;
@@ -1668,7 +1670,7 @@ a.load-more {
 }
 
 a.load-more:hover {
-	background-color: #e9562a;
+	background-color: #8aa03c;
 	color: #fff;
 }
 
@@ -1842,7 +1844,7 @@ a.load-more:hover {
 
 	width: 51px;
 	height: 51px;
-	background-color: #e9562a;
+	background-color: #8aa03c;
 	color: #fff;
 
 	text-decoration: none;
@@ -1860,7 +1862,7 @@ a.load-more:hover {
 }
 
 .media-box-controls a:hover {
-	background-color: #ec4316; /*#ec4316*/
+	background-color: #616d25;
 	color: #fff;
 }
 
@@ -1973,7 +1975,7 @@ a.load-more:hover {
 }
 
 .tab-box .tab-btns li.active-tab a, .tab-box .tab-btns li.first-child a{
-	color: #e9562a;
+	color: #8aa03c;
 	text-decoration: none;
 }
 
@@ -2017,7 +2019,7 @@ a.load-more:hover {
 }
 
 .toggle li.open-item a, .toggle li.open a {
-	color: #e9562a;
+	color: #8aa03c;
 }
 
 .toggle li.open-item, .toggle li.open {
@@ -2104,7 +2106,7 @@ a.load-more:hover {
 
 /* HIGHLIGHTS */
 .highlight {
-	background: #e9562a;
+	background: #8aa03c;
 	color: #fff;
 	padding: 3px 4px;
 }
@@ -2133,7 +2135,7 @@ p.drop-cap:first-letter {
 }
 
 p.drop-cap.square:first-letter {
-	background: #ec4316;
+	background: #5f3713;
 	padding:17px 15px 16px 15px;
 	text-align: center;
 	color: #fff;
@@ -2144,7 +2146,7 @@ p.drop-cap.square:first-letter {
 }
 
 p.drop-cap.round:first-letter {
-	background: #ec4316;
+	background: #5f3713;
 	width: 27px;
 	padding:17px 15px 16px 15px;
 	text-align: center;
@@ -2359,7 +2361,7 @@ p.drop-cap.round:first-letter {
 .hover-element {
 	display: block;
 	position: absolute;
-	background-color: #e9562a;
+	background-color: #8aa03c;
 	width: 60px;
 	height: 60px;
 	color: #fff;
@@ -2396,8 +2398,8 @@ p.drop-cap.round:first-letter {
 }
 
 .hover-element.lightbox-icon {
-
-	background: #e9562a url(../images/style/zoom.png) center no-repeat;
+	border: 2px solid #fff;
+	background: #8aa03c url(../images/style/zoom.png) center no-repeat;
 }
 
 .hover-element.lightbox-icon:after {
@@ -2423,7 +2425,7 @@ p.drop-cap.round:first-letter {
 	width: 100%;
 
 	padding: 20px;
-	border: 3px solid #e9562a;
+	border: 3px solid #8aa03c;
 
 	-webkit-box-sizing: border-box; 
 	-moz-box-sizing: border-box;
@@ -2433,43 +2435,20 @@ p.drop-cap.round:first-letter {
 .mission-items .project-thumb {
 	padding: 30px;
 }
-.mission-items .project-thumb:hover {
-	 -webkit-filter: contrast(150%);
-}
+
 #about .partner-logo img {
 	width: 100%;
 }
-#about .partner-logo.small img {
-	width: 180px;
-	height: 180px;
-	text-align: center; 
+#about .partner-logo.small:first-child {
+	margin-top: 30px;
 }
-/*.blog-gallery-image {
-	height: 150px;
-	width: 150px;
+.block.yourGardener{
+	padding-top: 75px;
 }
-
-.blog-gallery-image > img{
-	background-image: contain;
-}*/
-
-div.separator-before:before {
-	content: "";
-	display: block;
-	position: relative;
-	width: 100%;
-	height: 12px;
-	background: transparent url(../images/style/shadow.png) 0 -14px no-repeat;
+.block.bspb {
+	margin-left: 20px;
+	margin-right: 0px;
 }
-div.separator-after:after {
-	content: "";
-	display: block;
-	position: relative;
-	width: 100%;
-	height: 12px;
-	background: transparent url(../images/style/shadow.png) 0 -14px no-repeat;
-}
-
 .parallax-viewport { 
 	position:relative; 
 	overflow:hidden; 
@@ -2478,3 +2457,32 @@ div.separator-after:after {
 	height: 400px;
 }
 .parallax-layer { position:absolute; }
+.parallax-layer .parallax-icon {
+	width: 64px;
+	height: 64px;
+	position: absolute;
+}
+.parallax-layer .parallax-icon.bird {
+	top: 80px;
+	left: 580px;
+}
+.parallax-layer .parallax-icon.home {
+	top: 150px;
+	left: 470px;
+}
+.parallax-layer .parallax-icon.trap {
+	top: 200px;
+	left: 580px;
+}
+.parallax-layer .parallax-icon.leaf {
+	top: 270px;
+	right: 180px;
+}
+.parallax-layer .parallax-icon.larva {
+	top: 280px;
+	left: 410px;
+}
+.parallax-layer .parallax-icon.moth {
+	top: 150px;
+	right: 170px;
+}
