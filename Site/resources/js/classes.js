@@ -2087,7 +2087,8 @@
                         var postData = '{"userName":"School101","password":"School101"}';
 			$.ajax({
 				type: "POST", 
-				url: "http://localhost/WebServiceTest/MissionChestnutWebService.svc/GetAll",
+				//url: "http://localhost/WebServiceTest/MissionChestnutWebService.svc/GetAll",
+				url: "http://91.196.125.129/$sitepreview/kesteni.bg/MissionChestnutWebService/MissionChestnutWebService.svc/GetAll",
                                 dataType: "json",
 				contentType: "application/json; charset=utf-8",  
 				data: postData, 
