@@ -2106,7 +2106,7 @@
                                     }
 				},
 				error: function() {
-                                    alert('Error loading trees!');
+                                    //alert('Error loading trees!');
 				}
 			});
                         
