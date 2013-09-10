@@ -405,12 +405,13 @@
 
 					<div class="block one-half last">
                                             <label for="name">Име</label>
-                                            <input placeholder="Име" id="name" type="text" name="name">
+                                            <input placeholder="Име" id="name" type="text" name="name" />
                                             <label for="email">Имейл</label>
-                                            <input placeholder="Имейл" id="email" type="text" name="email">
+                                            <input placeholder="Имейл" id="email" type="text" name="email" />
                                             <label for="message">Съобщение*</label>
                                             <textarea placeholder="Съобщение*" id="message" name="message"></textarea>
-                                            <input id="submit" type="submit" value="Изпрати" onClick='SubmitFeedback();'>
+                                            <input id="submit" type="submit" value="Изпрати" onClick='SubmitFeedback();' />
+                                            <p id="feedbackSuccess" style="display: none">Благодаря!</p>
 					</div>
 				</div>
 			</div>
@@ -442,30 +443,23 @@
                         var name = $("#name").val(); 
                         var email = $("#email").val(); 
                         var message = $("#message").val(); 
-//                        var data = '{' + 
-//                            '"username":"Гошо"' +
-//                            ',"email":"' + email + '"' +
-//                            ',"message":"Message from Gosho"' +
-//                            '}';   
-                        var data = '{' + 
-                            '"username":"' + name + '"' +
-                            ',"email":"' + email + '"' +
-                            ',"message":"' + message + '"' +
-                            '}';
+                        
+                        var data = '{"username":"' + name + '","email":"' + email + '","message":"' + message + '"}';
                         data = data.replace(/(\r\n|\n|\r)/gm,"");
-			$.ajax({
-                            type: "POST", 
-                            url: "http://91.196.125.129/$sitepreview/kesteni.bg/MissionChestnutWebService/MissionChestnutWebService.svc/SendFeedback",
-                            //url: "http://localhost/WebServiceTest/MissionChestnutWebService.svc/SendFeedback",
-                            dataType: "json",
-                            contentType: "application/json; charset=utf-8",  
-                            data: data, 
-                            success: function (result) {
-                                //alert('Успешно изпращане на съобщение!');
-                            },
-                            error: function () {
-                                //alert('Грешка при изпращане на съобщение!');
-                            }
+                        
+                        $.ajax({
+				type: "POST", 
+				//url: "http://localhost/WebServiceTest/MissionChestnutWebService.svc/SendFeedback",
+				url: "http://91.196.125.129/$sitepreview/kesteni.bg/MissionChestnutWebService/MissionChestnutWebService.svc/SendFeedback",
+                                dataType: "json",
+				contentType: "application/json; charset=utf-8",  
+				data: data, 
+				success: function (result) {
+                                    $("#feedbackSuccess").show().delay(3000).fadeOut();
+				},
+				error: function() {
+                                    // todo: show error message?
+				}
 			});
                   }
   		</script>
