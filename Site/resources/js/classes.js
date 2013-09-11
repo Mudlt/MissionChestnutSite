@@ -2339,6 +2339,9 @@
 					{
 						//console.log('loaded');
 						imgCanvas();
+                                                
+                                                // todo: fix scrolling!                                                
+                                                //$(_data_container).parent().prev().find('h1')[0].scrollIntoView();
 
 					},
 					complete: function()
