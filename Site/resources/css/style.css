@@ -439,9 +439,9 @@ For IE8
 	left: 0;
 	top: 0;
 	width: 100%;
-	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1);
-	-moz-box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1);
-	-webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1);
+	-webkit-box-shadow: 0px 1px 2px rgba(100, 100, 100, 0.3);
+	-moz-box-shadow:    0px 1px 2px rgba(100, 100, 100, 0.3);
+	box-shadow:         0px 1px 2px rgba(100, 100, 100, 0.3);
 	background-color: inherit;
 	z-index: 999;
 }
@@ -477,9 +477,6 @@ For IE8
 	position: relative;
 	left: 0;
 	top: 0;
-}
-.logo-container img:hover {
-	-webkit-filter: hue-rotate(-15deg) saturate(1.0);
 }
 
 .logo-container img.alternate-logo {
@@ -550,7 +547,7 @@ section.home-template .section-holder:before {
 	top: 80px;
 	left: 0;
 
-	background: #212324 url(../images/style/slider-pattern.png);
+	background: #2e2115 url(../images/style/slider-pattern.png);
 }
 
 section.home-template .page-controls {
@@ -578,7 +575,8 @@ section.home-template .short-news-holder h5 {
 section.home-template .short-news-holder p {
 	font-size: 13px;
 	text-align: left;
-	color:#888;
+	color: #fff;
+	opacity: 0.5;
 }
 .welcome-text {
 	width: 960px;
@@ -628,9 +626,6 @@ section.blogs-template .page-controls a:hover {
 	color: #fff;
 }
 
-section.results-template.inverse-color {
-	background: #212324 url(../images/style/slider-pattern.png);
-}
 section.inverse-color {
 	margin-top: 152px;
 	padding-top: 0px;
@@ -668,11 +663,9 @@ section.project-template {
 }
 
 section.contacts-template {
-	margin-top: 152px;
+	margin-top: 90px;
 	padding-top: 0px;
-	padding-bottom: 120px;
-	/*background-color: #095069;
-	color: #a8d6e6;*/
+	padding-bottom: 0px;
 }
 section.contacts-template .heading {
 	margin-top: 72px;
@@ -1420,7 +1413,7 @@ input[type="submit"]:hover {
 	float: left;
 	color: #888;
 	font-size: 14px;
-	padding: 36px 0;
+	padding: 10px 0;
 }
 
 /* ================================= SLIDER =================================  */
@@ -2485,4 +2478,10 @@ p.drop-cap.round:first-letter {
 .parallax-layer .parallax-icon.moth {
 	top: 150px;
 	right: 170px;
+}
+
+#feedbackSuccess {
+	position: relative;
+	left: 30px;
+	top: 10px;
 }

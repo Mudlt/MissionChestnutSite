@@ -2584,7 +2584,7 @@ function switchPage(__data)
 							var timeliner = __data.section.find('#timelineContainer').length > 0 ? true :false;
 							if(timeliner)
 							{
-								$.timeliner();
+								$.timeliner({startOpen:['#p21EX']});
 							}
 							__data.success($(data));	
 						}
