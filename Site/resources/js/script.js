@@ -108,14 +108,9 @@ $(window).load(function()
 			section[$(this).attr('id')] = $(this).Blog(o, deeplink);
 		}
 		//MISSION
-		else if( $(this).hasClass('mission-template') && $(this).Mission )
+		else if( $(this).hasClass('mission-template') && $(this).Standart )
 		{
-			section[$(this).attr('id')] = $(this).Mission(o, deeplink, {
-			onsetup: function()
-			{
-				//setupWorksFilters( $(this) );
-			}
-			});
+			section[$(this).attr('id')] = $(this).Standart(o, deeplink);
 		}
 		//CHRONOLOGY
 		else if( $(this).hasClass('chronology-template') && $(this).Standart )

@@ -51,7 +51,7 @@ div.timelineMajor {
 	color:#fff;
 	letter-spacing:.1em;
 	line-height:1.7em;
-	padding:3px 5px 1px;
+	padding:2px 5px;
 }
 
 dl.timelineMinor {
@@ -78,7 +78,13 @@ dl.timelineMinor {
 	color:#000;
 	cursor:pointer;
 	text-decoration: none;
+	padding: 1px 5px 2px 5px;
+	-webkit-transition: color 0.2s, background-color 0.2s;
+	-moz-transition: color 0.2s, background-color 0.2s;
+	-o-transition: color 0.2s, background-color 0.2s;
+	transition: color 0.2s, background-color 0.2s;
 }
+
 .timelineMinor dt.publication a {
 	color:#888;
 	cursor:pointer;
@@ -97,11 +103,13 @@ dl.timelineMinor {
 }
 
 .timelineMinor dt a.open {
-	color:#8aa03c;
+	background:#8aa03c;
+	color:#fff;
 }
 
 .timelineMinor dt a:hover {
-	color:#8aa03c;
+	background:#8aa03c;
+	color:#fff;
 }
 
 .timelineMinor dd {

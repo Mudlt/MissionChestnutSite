@@ -556,28 +556,6 @@ section.home-template .page-controls {
 	z-index: 0;
 }
 
-section.home-template .short-news-holder {
-	width: 960px;
-	margin: 0 auto;
-	z-index: 1;
-}
- 
-section.home-template .short-news-holder a {
-	text-decoration: none;
-}
-
-section.home-template .short-news-holder h5 {
-	font-size: 14px;
-	color: #fff;
-	text-align: left;
-	margin-bottom: 6px;
-}
-section.home-template .short-news-holder p {
-	font-size: 13px;
-	text-align: left;
-	color: #fff;
-	opacity: 0.5;
-}
 .welcome-text {
 	width: 960px;
 	float: none;
@@ -2484,4 +2462,37 @@ p.drop-cap.round:first-letter {
 	position: relative;
 	left: 30px;
 	top: 10px;
+}
+
+.short-news-holder {
+	width: 960px;
+	margin: 0 auto;
+	z-index: 1;
+}
+ 
+.short-news-holder a {
+	text-decoration: none;
+	text-align: left;
+}
+
+.short-news-holder a > h5 {
+	font-size: 14px;
+	color: #fff;
+	opacity: 0.8;
+	text-align: left;
+	margin-bottom: 6px;
+}
+.short-news-holder a > p {
+	font-size: 13px;
+	text-align: left;
+	color: #fff;
+	opacity: 0.5;
+}
+
+.short-news-holder a:hover > h5,
+.short-news-holder a:hover > p {
+	opacity: 1;
+}
+.short-news-holder a:hover > h5 {
+	color:#8aa03c;
 }
