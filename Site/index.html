@@ -403,8 +403,7 @@
 						<div class="contacts-info">
 							<p>Желаещите да се включат в акцията училища, ученици и всички съмишленици могат да ни пишат тук, 
 								на страницата на проекта във Facebook, или да се свържат с
-								ръководителя на проекта, <strong>Веселин Цветанов</strong>:</p>
-							<br>
+								ръководителя на проекта, <strong>Веселин Цветанов</strong>:</p><br>
 							<p>Имейл: <strong>veselintsvetanov@gmail.com</strong></p>
 							<p>Телефон: <strong>0898 63 11 06</strong></p><br>
 							<a class="social-icon" href="https://www.facebook.com/MissionChestnut" target="_blank">
@@ -445,51 +444,51 @@
 		<script type="text/javascript" src="resources/js/jquery.event.frame.js"></script>
 		<script type="text/javascript" src="resources/js/timeliner.js"></script>
 		<script>
-		  jQuery(document).ready(function(){
-		    $('#parallax .parallax-layer')
-		    .parallax({
-		      mouseport: jQuery('#parallax')
-		    });
-		  });
-                  
-                    function SubmitFeedback() {
-                        var name = $("#name").val(); 
-                        var email = $("#email").val(); 
-                        var message = $("#message").val(); 
-                        
-                        var data = '{"username":"' + name + '","email":"' + email + '","message":"' + message + '"}';
-                        data = data.replace(/(\r\n|\n|\r)/gm,"");
-                        
-                        $.ajax({
-				type: "POST", 
-				//url: "http://localhost/WebServiceTest/MissionChestnutWebService.svc/SendFeedback",
-				url: "http://kesteni.bg/MissionChestnutWebService/MissionChestnutWebService.svc/SendFeedback",
-                                dataType: "json",
-				contentType: "application/json; charset=utf-8",  
-				data: data, 
-				success: function (result) {
-                                    $("#feedbackSuccess").show().delay(3000).fadeOut();
-				},
-				error: function() {
-                                    // todo: show error message?
-				}
+			jQuery(document).ready(function(){
+				$('#parallax .parallax-layer')
+				.parallax({
+					mouseport: jQuery('#parallax')
+				});
 			});
-                  }
-  		</script>
+			
+			function SubmitFeedback() {
+				var name = $("#name").val(); 
+				var email = $("#email").val(); 
+				var message = $("#message").val(); 
+				
+				var data = '{"username":"' + name + '","email":"' + email + '","message":"' + message + '"}';
+				data = data.replace(/(\r\n|\n|\r)/gm,"");
+				
+				$.ajax({
+					type: "POST", 
+					//url: "http://localhost/WebServiceTest/MissionChestnutWebService.svc/SendFeedback",
+					url: "http://kesteni.bg/MissionChestnutWebService/MissionChestnutWebService.svc/SendFeedback",
+					dataType: "json",
+					contentType: "application/json; charset=utf-8",  
+					data: data, 
+					success: function (result) {
+						$("#feedbackSuccess").show().delay(3000).fadeOut();
+					},
+					error: function() {
+	                                    // todo: show error message?
+	                                }
+	                            });
+			}
+		</script>
 
-  		<script type="text/javascript">
-  		var sc_project=9256425;
-  		var sc_invisible=1;
-  		var sc_security="5fb55ba0";
-  		var scJsHost = (("https:" == document.location.protocol) ?
-  			"https://secure." : "http://www.");
-  		document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+
-  			"statcounter.com/counter/counter.js'></"+"script>");
-  		</script>
-  		<noscript><div class="statcounter"><a title="web statistics"
-  			href="http://statcounter.com/" target="_blank"><img class="statcounter"
-  			src="http://c.statcounter.com/9256425/0/5fb55ba0/1/" alt="web
-  			statistics"></a></div>
-  		</noscript>
+		<script type="text/javascript">
+			var sc_project=9256425;
+			var sc_invisible=1;
+			var sc_security="5fb55ba0";
+			var scJsHost = (("https:" == document.location.protocol) ?
+				"https://secure." : "http://www.");
+			document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+
+				"statcounter.com/counter/counter.js'></"+"script>");
+			</script>
+			<noscript><div class="statcounter"><a title="web statistics"
+				href="http://statcounter.com/" target="_blank"><img class="statcounter"
+				src="http://c.statcounter.com/9256425/0/5fb55ba0/1/" alt="web
+				statistics"></a></div>
+			</noscript>
 	</body>
 </html>
