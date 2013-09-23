@@ -489,7 +489,7 @@
 //					title: Map.attr('data-pointer-title')
 //				});
 //			}     
-                        var postData = '{"userName":"School101","password":"School101"}';
+                        var postData = '{"userName":"0","password":"0"}';
 			$.ajax({
 				type: "POST", 
 				//url: "http://localhost/WebServiceTest/MissionChestnutWebService.svc/GetAll",
