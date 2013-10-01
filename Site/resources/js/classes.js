@@ -489,14 +489,13 @@
 //					title: Map.attr('data-pointer-title')
 //				});
 //			}     
-                        var postData = '{"userName":"0","password":"0"}';
 			$.ajax({
 				type: "POST", 
-				//url: "http://localhost/WebServiceTest/MissionChestnutWebService.svc/GetAll",
-				url: "http://kesteni.bg/MissionChestnutWebService/MissionChestnutWebService.svc/GetAll",
+				//url: "http://localhost/WebServiceTest/MissionChestnutWebService.svc/GetTrees",
+				url: "http://kesteni.bg/MissionChestnutWebService/MissionChestnutWebService.svc/GetTrees",
                                 dataType: "json",
 				contentType: "application/json; charset=utf-8",  
-				data: postData, 
+				data: '{ }', 
 				success: function (result) {
                                     for (var i = 0; i < result.Trees.length; i++) {
                                         var treeLocation = new google.maps.LatLng(
