@@ -491,12 +491,12 @@ For IE8
 .eealogo-container{
 	position: absolute;
 	right: 0;
-	top: 30px;
+	top: 50px;
 	
 }
 .eealogo-container img {
-	width: 150px;
-	height: 100px;
+	width: 130px;
+	height: 80px;
 }
 
 .main-navigation {
