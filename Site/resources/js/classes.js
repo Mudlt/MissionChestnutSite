@@ -996,7 +996,7 @@ function switchPage(__data)
 								var timeliner = __data.section.find('#timelineContainer').length > 0 ? true :false;
 								if(timeliner)
 								{
-									$.timeliner({startOpen: ['#24EX']});
+									$.timeliner({startOpen: ['#25EX']});
 								}
 							}
 							__data.success($(data));	
